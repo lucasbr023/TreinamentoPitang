@@ -25,3 +25,6 @@ C:\Users\Lucas\Desktop\Treinamento\TreinamentoPitang\Agenda\Agenda\obj\Debug\Age
 C:\Users\Lucas\Desktop\Treinamento\TreinamentoPitang\Agenda\Agenda\bin\Debug\Agenda.exe
 C:\Users\Lucas\Desktop\Treinamento\TreinamentoPitang\Agenda\Agenda\bin\Debug\Agenda.pdb
 C:\Users\Lucas\Desktop\Treinamento\TreinamentoPitang\Agenda\Agenda\obj\Debug\Agenda.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\TreinamentoPitang\Agenda\Agenda\bin\Debug\Agenda.exe.config
+C:\Users\Administrator\Desktop\TreinamentoPitang\Agenda\Agenda\obj\Debug\Agenda.exe
+C:\Users\Administrator\Desktop\TreinamentoPitang\Agenda\Agenda\obj\Debug\Agenda.pdb

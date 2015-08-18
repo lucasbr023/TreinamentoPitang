@@ -18,7 +18,7 @@ namespace LerArquivo2 {
 
                     if (System.IO.File.Exists(arquivo)) {
                         LerArquivo(arquivo);
-                        arquivo = Console.ReadLine();
+
                     }
                     else {
                         Console.WriteLine("o arquivo não existe, digite outro caminho!");
@@ -26,12 +26,13 @@ namespace LerArquivo2 {
                     }
 
                     Console.WriteLine("Digite o caminho de um arquivo txt: ");
+                    arquivo = Console.ReadLine();
                 }
             }
             catch (System.IO.FileNotFoundException) {
 
                 Console.WriteLine("O arquivo não existe!");
-                
+
 
 
 
@@ -57,7 +58,7 @@ namespace LerArquivo2 {
                     if (lines[count] != null) {
 
                         Console.WriteLine(lines[count]);
-                                              
+
                         count++;
 
                     }

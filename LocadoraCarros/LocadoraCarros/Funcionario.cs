@@ -5,7 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace LocadoraCarros {
-    class Usuarios : Pessoa {
+    class Funcionario : Pessoa {
+
+        public string Matricula { get; private set; }
 
 
 

@@ -11,3 +11,4 @@ C:\Users\Administrator\Desktop\17-08\17-08\LocadoraCarros\LocadoraCarros\obj\Deb
 C:\Users\Administrator\Desktop\17-08\17-08\LocadoraCarros\LocadoraCarros\obj\Debug\LocadoraCarros.Properties.Resources.resources
 C:\Users\Administrator\Desktop\17-08\17-08\LocadoraCarros\LocadoraCarros\obj\Debug\LocadoraCarros.csproj.GenerateResource.Cache
 C:\Users\Lucas\Desktop\Treinamento\LocadoraCarros\LocadoraCarros\bin\Debug\LocadoraCarros.exe.config
+C:\Users\Administrator\Desktop\TreinamentoPitang\LocadoraCarros\LocadoraCarros\bin\Debug\LocadoraCarros.exe.config
