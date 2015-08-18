@@ -14,15 +14,17 @@ namespace Agenda {
         public void Digitar(int posicao) {
             Console.WriteLine("Digite o telefone");
             try {
+
                 telefone = Console.ReadLine();
-              
-                if (telefone.ValidarTelefone()) {
-                    telefones[posicao, 1] = telefone;
+
+                while (!telefone.ValidarTelefone()) {
+                    Console.WriteLine("Telefone invalido, digite um telefone valido!");
+                    telefone = Console.ReadLine();
+                   
+
                 }
-                else {
-                    throw new FormatException();
-                }
-                
+                telefones[posicao, 1] = telefone;
+
             }
             catch(FormatException){
                 Console.WriteLine("Valor invalido!");

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace Agenda {
@@ -9,7 +10,9 @@ namespace Agenda {
 
         public static bool ValidarTelefone(this string telefone) {
 
-            if (telefone.All(char.IsDigit) || telefone.Equals("-") || telefone.Equals(" ") || telefone.Equals("(") || telefone.Equals(")") || telefone.Equals("+")) {
+            string regextelefone = @"^\(\d{2}\)\d{4}-\d{4}$";
+
+            if (Regex.IsMatch(telefone, regextelefone)) {
                 return true;
             }
             else {
