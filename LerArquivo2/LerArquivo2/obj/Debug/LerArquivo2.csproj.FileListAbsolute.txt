@@ -1,0 +1,9 @@
+C:\Users\Lucas\Desktop\Workspace VisualStudio C#\LerArquivo2\LerArquivo2\bin\Debug\LerArquivo2.exe.config
+C:\Users\Lucas\Desktop\Workspace VisualStudio C#\LerArquivo2\LerArquivo2\bin\Debug\LerArquivo2.exe
+C:\Users\Lucas\Desktop\Workspace VisualStudio C#\LerArquivo2\LerArquivo2\bin\Debug\LerArquivo2.pdb
+C:\Users\Lucas\Desktop\Workspace VisualStudio C#\LerArquivo2\LerArquivo2\obj\Debug\LerArquivo2.csprojResolveAssemblyReference.cache
+C:\Users\Lucas\Desktop\Workspace VisualStudio C#\LerArquivo2\LerArquivo2\obj\Debug\LerArquivo2.exe
+C:\Users\Lucas\Desktop\Workspace VisualStudio C#\LerArquivo2\LerArquivo2\obj\Debug\LerArquivo2.pdb
+C:\Users\Administrator\Desktop\17-08\17-08\LerArquivo2\LerArquivo2\bin\Debug\LerArquivo2.exe.config
+C:\Users\Administrator\Desktop\17-08\17-08\LerArquivo2\LerArquivo2\obj\Debug\LerArquivo2.exe
+C:\Users\Administrator\Desktop\17-08\17-08\LerArquivo2\LerArquivo2\obj\Debug\LerArquivo2.pdb

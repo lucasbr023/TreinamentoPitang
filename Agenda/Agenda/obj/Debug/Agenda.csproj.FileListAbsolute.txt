@@ -1,0 +1,21 @@
+C:\Users\Lucas\Desktop\Workspace VisualStudio C#\Agenda\Agenda\bin\Debug\Agenda.exe.config
+C:\Users\Lucas\Desktop\Workspace VisualStudio C#\Agenda\Agenda\bin\Debug\Agenda.exe
+C:\Users\Lucas\Desktop\Workspace VisualStudio C#\Agenda\Agenda\bin\Debug\Agenda.pdb
+C:\Users\Lucas\Desktop\Workspace VisualStudio C#\Agenda\Agenda\obj\Debug\Agenda.exe
+C:\Users\Lucas\Desktop\Workspace VisualStudio C#\Agenda\Agenda\obj\Debug\Agenda.pdb
+C:\Users\Lucas\Desktop\Workspace VisualStudio C#\Agenda\Agenda\obj\Debug\Agenda.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\17-08\17-08\Agenda\Agenda\bin\Debug\Agenda.exe.config
+C:\Users\Administrator\Desktop\17-08\17-08\Agenda\Agenda\obj\Debug\Agenda.exe
+C:\Users\Administrator\Desktop\17-08\17-08\Agenda\Agenda\obj\Debug\Agenda.pdb
+C:\Users\Administrator\Desktop\17-08\17-08\Agenda\Agenda\bin\Debug\Agenda.exe
+C:\Users\Administrator\Desktop\17-08\17-08\Agenda\Agenda\bin\Debug\Agenda.pdb
+C:\Users\Administrator\Desktop\17-08\17-08\Agenda\Agenda\bin\Debug\mscorlib.dll
+C:\Users\Administrator\Desktop\17-08\17-08\Agenda\Agenda\bin\Debug\normidna.nlp
+C:\Users\Administrator\Desktop\17-08\17-08\Agenda\Agenda\bin\Debug\normnfc.nlp
+C:\Users\Administrator\Desktop\17-08\17-08\Agenda\Agenda\bin\Debug\normnfd.nlp
+C:\Users\Administrator\Desktop\17-08\17-08\Agenda\Agenda\bin\Debug\normnfkc.nlp
+C:\Users\Administrator\Desktop\17-08\17-08\Agenda\Agenda\bin\Debug\normnfkd.nlp
+C:\Users\Administrator\Desktop\17-08\17-08\Agenda\Agenda\obj\Debug\Agenda.csprojResolveAssemblyReference.cache
+C:\Users\Lucas\Desktop\Treinamento\Agenda\Agenda\bin\Debug\Agenda.exe.config
+C:\Users\Lucas\Desktop\Treinamento\Agenda\Agenda\obj\Debug\Agenda.exe
+C:\Users\Lucas\Desktop\Treinamento\Agenda\Agenda\obj\Debug\Agenda.pdb
