@@ -20,7 +20,6 @@ namespace LocadoraCarros {
 
 
         public Carro(string modelo, string ano, string placa, int quilometragem, string cor, string chaci) {
-
             Modelo = modelo;
             Ano = ano;
             Placa = placa;

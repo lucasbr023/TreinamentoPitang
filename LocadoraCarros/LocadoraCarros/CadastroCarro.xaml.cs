@@ -21,8 +21,73 @@ namespace LocadoraCarros {
             InitializeComponent();
         }
 
+        List<Carro> carros = new List<Carro>();
+
+
+       
+
+
+
+
         private void comboBox_SelectionChanged(object sender, SelectionChangedEventArgs e) {
 
+        }
+
+        private void textBox_Modelo_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBox_Ano_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBox_Placa_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBox_Quilometragem_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBox_Cor_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBox_Chaci_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBox_qtdPortas_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void comboBox_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void button_salvarCarro_Click(object sender, RoutedEventArgs e)
+        {
+            string ano = textBox_Ano.Text;
+            string placa = textBox_Placa.Text;
+            string cor = textBox_Cor.Text;
+            int quilometragem = int.Parse(textBox_Quilometragem.Text);
+            string chaci = textBox_Chaci.Text;
+            string qtdPortas = textBox_qtdPortas.Text;
+            string modelo = textBox_Modelo.Text;
+
+
+            Carro carro = new Carro(modelo, ano, placa, quilometragem, cor, chaci);
+            carros.Add(carro);
+            MessageBox.Show("Carro adicionado com sucesso!");
+            this.Close();
         }
     }
 }

@@ -34,6 +34,21 @@ namespace LocadoraCarros {
 
         }
 
-      
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            CadastroCliente cadastro = new CadastroCliente();
+            cadastro.Show();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_cadastroCarro(object sender, RoutedEventArgs e)
+        {
+            CadastroCarro cadastro = new CadastroCarro();
+            cadastro.Show();
+        }
     }
 }

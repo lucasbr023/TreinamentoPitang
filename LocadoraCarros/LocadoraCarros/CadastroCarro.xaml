@@ -15,16 +15,16 @@
         <Label x:Name="label_Copy4" Content="Cor" HorizontalAlignment="Left" Margin="41,166,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label_Copy5" Content="Chaci" HorizontalAlignment="Left" Margin="42,192,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label_Copy6" Content="Quantidade de Portas" HorizontalAlignment="Left" Margin="42,218,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBox_Modelo" HorizontalAlignment="Left" Height="23" Margin="97,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="390"/>
-        <TextBox x:Name="textBox_Ano" HorizontalAlignment="Left" Height="23" Margin="97,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="390"/>
-        <TextBox x:Name="textBox_Placa" HorizontalAlignment="Left" Height="23" Margin="97,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="390"/>
-        <TextBox x:Name="textBox_Quilometragem" HorizontalAlignment="Left" Height="23" Margin="134,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="353"/>
-        <TextBox x:Name="textBox_Cor" HorizontalAlignment="Left" Height="23" Margin="97,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="390"/>
-        <TextBox x:Name="textBox_Chaci" HorizontalAlignment="Left" Height="23" Margin="97,198,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="390"/>
-        <TextBox x:Name="textBox_qtdPortas" HorizontalAlignment="Left" Height="23" Margin="167,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="320"/>
+        <TextBox x:Name="textBox_Modelo" HorizontalAlignment="Left" Height="23" Margin="97,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="390" TextChanged="textBox_Modelo_TextChanged"/>
+        <TextBox x:Name="textBox_Ano" HorizontalAlignment="Left" Height="23" Margin="97,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="390" TextChanged="textBox_Ano_TextChanged"/>
+        <TextBox x:Name="textBox_Placa" HorizontalAlignment="Left" Height="23" Margin="97,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="390" TextChanged="textBox_Placa_TextChanged"/>
+        <TextBox x:Name="textBox_Quilometragem" HorizontalAlignment="Left" Height="23" Margin="134,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="353" TextChanged="textBox_Quilometragem_TextChanged"/>
+        <TextBox x:Name="textBox_Cor" HorizontalAlignment="Left" Height="23" Margin="97,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="390" TextChanged="textBox_Cor_TextChanged"/>
+        <TextBox x:Name="textBox_Chaci" HorizontalAlignment="Left" Height="23" Margin="97,198,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="390" TextChanged="textBox_Chaci_TextChanged"/>
+        <TextBox x:Name="textBox_qtdPortas" HorizontalAlignment="Left" Height="23" Margin="167,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="320" TextChanged="textBox_qtdPortas_TextChanged"/>
         <Label x:Name="label_Copy7" Content="Categoria:" HorizontalAlignment="Left" Margin="42,244,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="111,248,0,0" VerticalAlignment="Top" Width="138"/>
-        <Button x:Name="button_salvarCarro" Content="Salvar" HorizontalAlignment="Left" Margin="412,289,0,0" VerticalAlignment="Top" Width="75"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="111,248,0,0" VerticalAlignment="Top" Width="138" SelectionChanged="comboBox_SelectionChanged_1"/>
+        <Button x:Name="button_salvarCarro" Content="Salvar" HorizontalAlignment="Left" Margin="412,289,0,0" VerticalAlignment="Top" Width="75" Click="button_salvarCarro_Click"/>
 
     </Grid>
 </Window>

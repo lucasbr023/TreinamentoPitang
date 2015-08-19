@@ -20,5 +20,79 @@ namespace LocadoraCarros {
         public CadastroCliente() {
             InitializeComponent();
         }
+
+        List<Cliente> clientes = new List<Cliente>();
+
+        private void textBox_nome_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBox_Documento_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBox_DataNascimento_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBox_telefone_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBox_logradouro_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBox_numero_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBox_cep_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBox_bairro_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBox_estado_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBox_cidade_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBox_complemento_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void button_salvarCliente_Click(object sender, RoutedEventArgs e)
+        {
+
+            string nome = textBox_nome.Text;
+            string documento = textBox_Documento.Text;
+
+
+            Cliente cliente = new Cliente(nome, documento);
+
+            clientes.Add(cliente);
+            MessageBox.Show("Cliente adicionado com sucesso!!");
+            this.Close();
+            
+
+
+        }
     }
 }

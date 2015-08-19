@@ -19,19 +19,19 @@
         <Label x:Name="label_Copy8" Content="Cidade:" HorizontalAlignment="Left" Margin="198,235,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label_Copy9" Content="CEP:" HorizontalAlignment="Left" Margin="214,184,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label_Copy10" Content="Complemento: " HorizontalAlignment="Left" Margin="26,266,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBox_nome" HorizontalAlignment="Left" Height="23" Margin="80,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="415"/>
-        <TextBox x:Name="textBox_Documento" HorizontalAlignment="Left" Height="23" Margin="104,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="391"/>
-        <TextBox x:Name="textBox_DataNascimento" HorizontalAlignment="Left" Height="23" Margin="127,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="112"/>
-        <TextBox x:Name="textBox_logradouro" HorizontalAlignment="Left" Height="23" Margin="106,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="389"/>
-        <TextBox x:Name="textBox_numero" HorizontalAlignment="Left" Height="23" Margin="87,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="textBox_cep" HorizontalAlignment="Left" Height="23" Margin="252,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="243"/>
-        <TextBox x:Name="textBox_bairro" HorizontalAlignment="Left" Height="23" Margin="73,214,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="422"/>
-        <TextBox x:Name="textBox_estado" HorizontalAlignment="Left" Height="23" Margin="71,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="127"/>
-        <TextBox x:Name="textBox_cidade" HorizontalAlignment="Left" Height="23" Margin="252,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="243"/>
-        <TextBox x:Name="textBox_complemento" HorizontalAlignment="Left" Height="40" Margin="117,269,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="303"/>
+        <TextBox x:Name="textBox_nome" HorizontalAlignment="Left" Height="23" Margin="80,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="415" TextChanged="textBox_nome_TextChanged"/>
+        <TextBox x:Name="textBox_Documento" HorizontalAlignment="Left" Height="23" Margin="104,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="391" TextChanged="textBox_Documento_TextChanged"/>
+        <TextBox x:Name="textBox_DataNascimento" HorizontalAlignment="Left" Height="23" Margin="127,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="112" TextChanged="textBox_DataNascimento_TextChanged"/>
+        <TextBox x:Name="textBox_logradouro" HorizontalAlignment="Left" Height="23" Margin="106,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="389" TextChanged="textBox_logradouro_TextChanged"/>
+        <TextBox x:Name="textBox_numero" HorizontalAlignment="Left" Height="23" Margin="87,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="textBox_numero_TextChanged"/>
+        <TextBox x:Name="textBox_cep" HorizontalAlignment="Left" Height="23" Margin="252,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="243" TextChanged="textBox_cep_TextChanged"/>
+        <TextBox x:Name="textBox_bairro" HorizontalAlignment="Left" Height="23" Margin="73,214,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="422" TextChanged="textBox_bairro_TextChanged"/>
+        <TextBox x:Name="textBox_estado" HorizontalAlignment="Left" Height="23" Margin="71,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="127" TextChanged="textBox_estado_TextChanged"/>
+        <TextBox x:Name="textBox_cidade" HorizontalAlignment="Left" Height="23" Margin="252,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="243" TextChanged="textBox_cidade_TextChanged"/>
+        <TextBox x:Name="textBox_complemento" HorizontalAlignment="Left" Height="40" Margin="117,269,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="303" TextChanged="textBox_complemento_TextChanged"/>
         <Label x:Name="label_Copy11" Content="Telefone" HorizontalAlignment="Left" Margin="244,108,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBox_telefone" HorizontalAlignment="Left" Height="23" Margin="298,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
-        <Button x:Name="button_salvarCliente" Content="Salvar" HorizontalAlignment="Left" Margin="432,289,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBox x:Name="textBox_telefone" HorizontalAlignment="Left" Height="23" Margin="298,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197" TextChanged="textBox_telefone_TextChanged"/>
+        <Button x:Name="button_salvarCliente" Content="Salvar" HorizontalAlignment="Left" Margin="432,289,0,0" VerticalAlignment="Top" Width="75" Click="button_salvarCliente_Click"/>
         <Button Content="Cancelar" HorizontalAlignment="Left" Margin="432,262,0,0" VerticalAlignment="Top" Width="75"/>
 
     </Grid>
