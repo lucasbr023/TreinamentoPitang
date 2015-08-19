@@ -3,6 +3,13 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Menu x:Name="menu" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="517">
+            <Button x:Name="button_Cliente" Content="Cliente" Width="75"/>
+            <Button x:Name="button_Carros" Content="Carros" Width="75"/>
+            <Button x:Name="button_Aluguel" Content="Aluguel" Width="75"/>
+        </Menu>
     </Grid>
 </Window>

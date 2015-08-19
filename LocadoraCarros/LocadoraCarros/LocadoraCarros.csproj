@@ -56,30 +56,52 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Endereco.cs" />
-    <Compile Include="Usuarios.cs" />
+    <Compile Include="AluguelCliente.xaml.cs">
+      <DependentUpon>AluguelCliente.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CadastroCarro.xaml.cs">
+      <DependentUpon>CadastroCarro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CadastroCliente.xaml.cs">
+      <DependentUpon>CadastroCliente.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Entidades\Endereco.cs" />
+    <Compile Include="Entidades\Status.cs" />
+    <Compile Include="Entidades\Usuarios.cs" />
+    <Page Include="AluguelCliente.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CadastroCarro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CadastroCliente.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="Administrador.cs" />
-    <Compile Include="Aluguel.cs" />
+    <Compile Include="Entidades\Administrador.cs" />
+    <Compile Include="Entidades\Aluguel.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Carro.cs" />
-    <Compile Include="Categoria.cs" />
-    <Compile Include="Cliente.cs" />
-    <Compile Include="DescricaoTipoCarro.cs" />
-    <Compile Include="Localizacao.cs" />
+    <Compile Include="Entidades\Carro.cs" />
+    <Compile Include="Entidades\Categoria.cs" />
+    <Compile Include="Entidades\Cliente.cs" />
+    <Compile Include="Entidades\DescricaoTipoCarro.cs" />
+    <Compile Include="Entidades\Localizacao.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Pessoa.cs" />
+    <Compile Include="Entidades\Pessoa.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
