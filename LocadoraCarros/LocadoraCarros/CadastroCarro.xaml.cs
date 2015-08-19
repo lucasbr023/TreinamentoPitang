@@ -20,5 +20,9 @@ namespace LocadoraCarros {
         public CadastroCarro() {
             InitializeComponent();
         }
+
+        private void comboBox_SelectionChanged(object sender, SelectionChangedEventArgs e) {
+
+        }
     }
 }

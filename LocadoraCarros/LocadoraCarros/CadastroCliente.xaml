@@ -32,6 +32,7 @@
         <Label x:Name="label_Copy11" Content="Telefone" HorizontalAlignment="Left" Margin="244,108,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="textBox_telefone" HorizontalAlignment="Left" Height="23" Margin="298,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
         <Button x:Name="button_salvarCliente" Content="Salvar" HorizontalAlignment="Left" Margin="432,289,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Cancelar" HorizontalAlignment="Left" Margin="432,262,0,0" VerticalAlignment="Top" Width="75"/>
 
     </Grid>
 </Window>
