@@ -7,17 +7,12 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Menu x:Name="menu" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="517">
+        <Menu x:Name="menu" HorizontalAlignment="Left" Height="31" VerticalAlignment="Top" Width="517">
             <ComboBox Width="120" SelectionChanged="ComboBox_SelectionChanged_1">
                 <Button Content="Novo Cliente" Click="Button_Click"/>
                 <Button Content="Todos Clientes" Click="Button_Click_2"/>
             </ComboBox>
             <ComboBox Width="120" SelectionChanged="ComboBox_SelectionChanged_2">
-                <Button>
-                    <Button.DataContext>
-                        <local:CadastroCarro/>
-                    </Button.DataContext>
-                </Button>
                 <Button Content="Cadastro Carro" Click="Button_Click_cadastroCarro"/>
                 <Button Content="Todos os carros" Click="Button_Click_1"/>
             </ComboBox>

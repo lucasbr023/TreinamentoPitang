@@ -17,12 +17,7 @@ namespace LocadoraCarros.Repositorios {
 
         }
 
-        //public IEnumerable<Cliente> List {
-        //    get {
-        //        return Repositorio.C
-        //    }
-        //}
-
+      
         public void Atualizar(Cliente entidade) {
             Cliente aux = Procurar(entidade.Documento);
             int index = Repositorio.IndexOf(aux);
@@ -42,12 +37,10 @@ namespace LocadoraCarros.Repositorios {
             Repositorio.Add(entidade);
 
 
-            using (StreamWriter sw = new StreamWriter(@"C:\Users\Lucas\Desktop\teste.txt")) {
-                sw.WriteLine("nome: "+ entidade.Nome.ToString() + "Documento: " + entidade.Documento.ToString());
+            using (StreamWriter sw = new StreamWriter(@"C:\Users\Administrator\Desktop\teste.txt")) {
+                sw.WriteLine("nome: "+ entidade.Nome.ToString() + " - Documento: " + entidade.Documento.ToString());
             }
-            
-            
-            
+     
 
         }
 
@@ -60,11 +53,6 @@ namespace LocadoraCarros.Repositorios {
             return null;
 
         }
-
-      
-
-     
-
 
     }
 }

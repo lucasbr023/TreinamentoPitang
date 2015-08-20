@@ -28,3 +28,12 @@ C:\Users\Lucas\Desktop\Treinamento\TreinamentoPitang\Agenda\Agenda\obj\Debug\Age
 C:\Users\Administrator\Desktop\TreinamentoPitang\Agenda\Agenda\bin\Debug\Agenda.exe.config
 C:\Users\Administrator\Desktop\TreinamentoPitang\Agenda\Agenda\obj\Debug\Agenda.exe
 C:\Users\Administrator\Desktop\TreinamentoPitang\Agenda\Agenda\obj\Debug\Agenda.pdb
+C:\Users\Administrator\Desktop\TreinamentoPitang\Agenda\Agenda\bin\Debug\Agenda.exe
+C:\Users\Administrator\Desktop\TreinamentoPitang\Agenda\Agenda\bin\Debug\Agenda.pdb
+C:\Users\Administrator\Desktop\TreinamentoPitang\Agenda\Agenda\bin\Debug\mscorlib.dll
+C:\Users\Administrator\Desktop\TreinamentoPitang\Agenda\Agenda\bin\Debug\normidna.nlp
+C:\Users\Administrator\Desktop\TreinamentoPitang\Agenda\Agenda\bin\Debug\normnfc.nlp
+C:\Users\Administrator\Desktop\TreinamentoPitang\Agenda\Agenda\bin\Debug\normnfd.nlp
+C:\Users\Administrator\Desktop\TreinamentoPitang\Agenda\Agenda\bin\Debug\normnfkc.nlp
+C:\Users\Administrator\Desktop\TreinamentoPitang\Agenda\Agenda\bin\Debug\normnfkd.nlp
+C:\Users\Administrator\Desktop\TreinamentoPitang\Agenda\Agenda\obj\Debug\Agenda.csprojResolveAssemblyReference.cache

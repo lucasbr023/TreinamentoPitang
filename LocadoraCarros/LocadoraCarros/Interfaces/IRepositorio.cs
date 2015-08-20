@@ -13,5 +13,6 @@ namespace LocadoraCarros {
         void Atualizar(T entidade);
         T Procurar(string codigo);
         T[] BuscarTodos();
+
     }
 }

@@ -24,7 +24,8 @@ namespace LocadoraCarros {
             InitializeComponent();
         }
 
-        RepositorioCliente repositorio = new RepositorioCliente();
+        RepositorioCliente repositorioCliente = new RepositorioCliente();
+        
 
         private void ComboBox_SelectionChanged_1(object sender, SelectionChangedEventArgs e) {
 
@@ -44,6 +45,18 @@ namespace LocadoraCarros {
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e) {
+            string arquivo = @"C:\Users\Administrator\Desktop\teste2.txt";
+
+            StreamReader sr = new StreamReader(arquivo, Encoding.UTF8);
+            string linha = sr.ReadLine();
+
+
+            while (linha != null) {
+                listView.Items.Add(linha);
+                linha = sr.ReadLine();
+            }
+
+
 
         }
 
@@ -60,7 +73,7 @@ namespace LocadoraCarros {
         private void Button_Click_2(object sender, RoutedEventArgs e) {
 
 
-            string arquivo = @"C:\Users\Lucas\Desktop\teste.txt";
+            string arquivo = @"C:\Users\Administrator\Desktop\teste.txt";
 
             StreamReader sr = new StreamReader(arquivo, Encoding.UTF8);
             string linha = sr.ReadLine();

@@ -68,7 +68,9 @@
     <Compile Include="Entidades\Endereco.cs" />
     <Compile Include="Entidades\Status.cs" />
     <Compile Include="Entidades\Usuarios.cs" />
+    <Compile Include="Repositorios\RepositorioCarro.cs" />
     <Compile Include="Repositorios\RepositorioCliente.cs" />
+    <Compile Include="Validacao.cs" />
     <Page Include="AluguelCliente.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

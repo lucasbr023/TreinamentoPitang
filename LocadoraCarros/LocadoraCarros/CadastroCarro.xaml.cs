@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LocadoraCarros.Repositorios;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,7 +22,7 @@ namespace LocadoraCarros {
             InitializeComponent();
         }
 
-        List<Carro> carros = new List<Carro>();
+        RepositorioCarro RepositorioCarros = new RepositorioCarro();
 
 
        
@@ -80,12 +81,12 @@ namespace LocadoraCarros {
             string cor = textBox_Cor.Text;
             int quilometragem = int.Parse(textBox_Quilometragem.Text);
             string chaci = textBox_Chaci.Text;
-            string qtdPortas = textBox_qtdPortas.Text;
+            int qtdPortas = int.Parse(textBox_qtdPortas.Text);
             string modelo = textBox_Modelo.Text;
 
 
             Carro carro = new Carro(modelo, ano, placa, quilometragem, cor, chaci);
-            carros.Add(carro);
+            RepositorioCarros.Inserir(carro);
             MessageBox.Show("Carro adicionado com sucesso!");
             this.Close();
         }

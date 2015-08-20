@@ -9,13 +9,15 @@ namespace LocadoraCarros {
       
         public Endereco Endereco { get; set; }
         public string DadosCartao { get; set; }
-        public string Cnpj { get; private set; }
+        
 
         public Cliente(string nome, string documento) {
             Nome = nome;
             Documento = documento;
 
         }
+
+
 
         public static bool ValidarCPF(string documento) {
 
