@@ -13,14 +13,18 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace LocadoraCarros {
+
+namespace LocadoraCarros
+{
     /// <summary>
     /// Interaction logic for CadastroCliente.xaml
     /// </summary>
-    public partial class CadastroCliente : Window {
-        public CadastroCliente() {
+    public partial class CadastroCliente : Window
+    {
+        public CadastroCliente()
+        {
             InitializeComponent();
-          
+
 
         }
         RepositorioCliente repositorio = new RepositorioCliente();
@@ -87,7 +91,7 @@ namespace LocadoraCarros {
         {
 
             string nome = textBox_nome.Text;
-            
+
             string documento = textBox_Documento.Text;
             string telefone = textBox_telefone.Text;
             string dataNascimento = textBox_DataNascimento.Text;
@@ -99,27 +103,54 @@ namespace LocadoraCarros {
             string cidade = textBox_cidade.Text;
             string complemento = textBox_complemento.Text;
 
-            if (!nome.ValidarBrankSpace() || !documento.ValidarBrankSpace() || !telefone.ValidarBrankSpace()) {
+            if (radioButton.IsChecked == true)
+            {
+                if (!documento.ValidarCPF())
+                {
+
+                    MessageBox.Show("CPF invalido!");
+                }
+            }
+
+            if (radioButton1.IsChecked == true)
+            {
+                if (!documento.ValidarCNPJ())
+                {
+                    MessageBox.Show("CNPJ invalido!");
+                }
+            }
+
+            if (!dataNascimento.ValidarData()) {
+                MessageBox.Show("Data invalida!");
+            }
+
+
+
+            if (!nome.ValidarBrankSpace() || !documento.ValidarBrankSpace() || !telefone.ValidarBrankSpace())
+            {
                 MessageBox.Show("Não pode conter conteudo obrigatorio em branco!");
             }
-            else if (!telefone.ValidarTelefone()) {
+            else if (!telefone.ValidarTelefone())
+            {
                 MessageBox.Show("Telefone invalido");
             }
-            else {
+            else
+            {
                 Cliente cliente = new Cliente(nome, documento);
                 repositorio.Inserir(cliente);
                 this.Close();
             }
-           
-            
+
+        }
 
 
-           
+        private void radioButton_Checked(object sender, RoutedEventArgs e)
+        {
 
-           
-            
-            
+        }
 
+        private void radioButton1_Checked(object sender, RoutedEventArgs e)
+        {
 
         }
     }

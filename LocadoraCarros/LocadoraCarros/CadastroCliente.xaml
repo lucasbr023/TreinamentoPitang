@@ -33,8 +33,8 @@
         <TextBox x:Name="textBox_telefone" HorizontalAlignment="Left" Height="23" Margin="298,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197" TextChanged="textBox_telefone_TextChanged"/>
         <Button x:Name="button_salvarCliente" Content="Salvar" HorizontalAlignment="Left" Margin="432,289,0,0" VerticalAlignment="Top" Width="75" Click="button_salvarCliente_Click"/>
         <Button Content="Cancelar" HorizontalAlignment="Left" Margin="432,262,0,0" VerticalAlignment="Top" Width="75"/>
-        <CheckBox Content="CPF" HorizontalAlignment="Left" Margin="325,85,0,0" VerticalAlignment="Top"/>
-        <CheckBox Content="CNPJ" HorizontalAlignment="Left" Margin="388,85,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioButton" Content="CPF" HorizontalAlignment="Left" Margin="310,85,0,0" VerticalAlignment="Top" Checked="radioButton_Checked"/>
+        <RadioButton x:Name="radioButton1" Content="CNPJ" HorizontalAlignment="Left" Margin="367,85,0,0" VerticalAlignment="Top" Checked="radioButton1_Checked"/>
 
     </Grid>
 </Window>

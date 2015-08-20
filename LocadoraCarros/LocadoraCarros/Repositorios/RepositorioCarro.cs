@@ -13,7 +13,7 @@ namespace LocadoraCarros.Repositorios {
         public void Inserir(Carro entidade) {
             Repositorio.Add(entidade);
 
-            using (StreamWriter sw = new StreamWriter(@"C:\Users\Administrator\Desktop\teste2.txt")) {
+            using (StreamWriter sw = new StreamWriter(@"C:\Users\NataliaVitória\Desktop\teste2.txt")) {
                 sw.WriteLine("nome: " + entidade.Modelo.ToString() + " - Documento: " + entidade.Chaci.ToString());
             }
         }

@@ -10,6 +10,7 @@
         <Menu x:Name="menu" HorizontalAlignment="Left" Height="31" VerticalAlignment="Top" Width="517">
             <ComboBox Width="120" SelectionChanged="ComboBox_SelectionChanged_1">
                 <Button Content="Novo Cliente" Click="Button_Click"/>
+                <Button Content="Ultimo add" Click="Button_Click_3"/>
                 <Button Content="Todos Clientes" Click="Button_Click_2"/>
             </ComboBox>
             <ComboBox Width="120" SelectionChanged="ComboBox_SelectionChanged_2">

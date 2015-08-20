@@ -37,7 +37,7 @@ namespace LocadoraCarros.Repositorios {
             Repositorio.Add(entidade);
 
 
-            using (StreamWriter sw = new StreamWriter(@"C:\Users\Administrator\Desktop\teste.txt")) {
+            using (StreamWriter sw = new StreamWriter(@"C:\Users\NataliaVitória\Desktop\teste1.txt")) {
                 sw.WriteLine("nome: "+ entidade.Nome.ToString() + " - Documento: " + entidade.Documento.ToString());
             }
      
@@ -47,8 +47,10 @@ namespace LocadoraCarros.Repositorios {
         public Cliente Procurar(string codigo) {
             foreach (Cliente cliente in Repositorio) {
                 if (cliente.Documento.Equals(codigo)) {
+                    
                     return cliente;
                 }
+                
             }
             return null;
 

@@ -45,7 +45,7 @@ namespace LocadoraCarros {
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e) {
-            string arquivo = @"C:\Users\Administrator\Desktop\teste2.txt";
+            string arquivo = @"C:\Users\NataliaVitória\Desktop\teste2.txt";
 
             StreamReader sr = new StreamReader(arquivo, Encoding.UTF8);
             string linha = sr.ReadLine();
@@ -73,7 +73,7 @@ namespace LocadoraCarros {
         private void Button_Click_2(object sender, RoutedEventArgs e) {
 
 
-            string arquivo = @"C:\Users\Administrator\Desktop\teste.txt";
+            string arquivo = @"C:\Users\NataliaVitória\Desktop\teste1.txt";
 
             StreamReader sr = new StreamReader(arquivo, Encoding.UTF8);
             string linha = sr.ReadLine();
@@ -83,6 +83,14 @@ namespace LocadoraCarros {
                 listView.Items.Add(linha); 
                 linha = sr.ReadLine();
             }
+
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(repositorioCliente.Procurar("10758480407").ToString());
+            
+
 
         }
     }

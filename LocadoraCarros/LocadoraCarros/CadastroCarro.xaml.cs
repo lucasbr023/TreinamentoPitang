@@ -12,6 +12,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Windows.Data;
+using System.Data;
+
 
 namespace LocadoraCarros {
     /// <summary>
@@ -76,6 +79,15 @@ namespace LocadoraCarros {
 
         private void button_salvarCarro_Click(object sender, RoutedEventArgs e)
         {
+
+            DataTable table = new DataTable();
+            table.Columns.Add("modelo");
+            table.Columns.Add("ano");
+            table.Columns.Add("placa");
+            table.Columns.Add("quilometragem");
+            table.Columns.Add("cor");
+            table.Columns.Add("chaci");
+
             string ano = textBox_Ano.Text;
             string placa = textBox_Placa.Text;
             string cor = textBox_Cor.Text;
