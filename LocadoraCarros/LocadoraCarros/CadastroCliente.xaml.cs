@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LocadoraCarros.Repositorios;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +20,13 @@ namespace LocadoraCarros {
     public partial class CadastroCliente : Window {
         public CadastroCliente() {
             InitializeComponent();
-        }
+          
 
-        List<Cliente> clientes = new List<Cliente>();
+        }
+        RepositorioCliente repositorio = new RepositorioCliente();
+
+
+
 
         private void textBox_nome_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -86,8 +91,8 @@ namespace LocadoraCarros {
 
 
             Cliente cliente = new Cliente(nome, documento);
+            repositorio.Inserir(cliente);
 
-            clientes.Add(cliente);
             MessageBox.Show("Cliente adicionado com sucesso!!");
             this.Close();
             

@@ -10,7 +10,7 @@
         <Menu x:Name="menu" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="517">
             <ComboBox Width="120" SelectionChanged="ComboBox_SelectionChanged_1">
                 <Button Content="Novo Cliente" Click="Button_Click"/>
-                <Button Content="Todos Clientes"/>
+                <Button Content="Todos Clientes" Click="Button_Click_2"/>
             </ComboBox>
             <ComboBox Width="120" SelectionChanged="ComboBox_SelectionChanged_2">
                 <Button>
@@ -23,7 +23,7 @@
             </ComboBox>
             <ComboBox Width="120" SelectionChanged="ComboBox_SelectionChanged_3"/>
         </Menu>
-        <ListView x:Name="listView" HorizontalAlignment="Left" Height="278" Margin="10,31,0,0" VerticalAlignment="Top" Width="497">
+        <ListView x:Name="listView" HorizontalAlignment="Left" Height="278" Margin="10,31,0,0" VerticalAlignment="Top" Width="497" SelectionChanged="listView_SelectionChanged">
             <ListView.View>
                 <GridView>
                     <GridViewColumn/>
