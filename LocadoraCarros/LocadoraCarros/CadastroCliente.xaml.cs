@@ -1,4 +1,5 @@
-﻿using LocadoraCarros.Repositorios;
+﻿using LocadoraCarros.Negocio;
+using LocadoraCarros.Repositorios;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,7 +28,62 @@ namespace LocadoraCarros
 
 
         }
-        RepositorioCliente repositorio = new RepositorioCliente();
+
+
+        Singleton singleton = Singleton.GetInstancia();
+        
+        //RepositorioCliente repositorio = new RepositorioCliente();
+
+
+
+        private void button_salvarCliente_Click(object sender, RoutedEventArgs e) {
+
+            string nome = textBox_nome.Text;
+
+            string documento = textBox_Documento.Text;
+            string telefone = textBox_telefone.Text;
+            string dataNascimento = textBox_DataNascimento.Text;
+            string estado = textBox_estado.Text;
+            string logradouro = textBox_logradouro.Text;
+            string numero = textBox_numero.Text;
+            string bairro = textBox_bairro.Text;
+            string cep = textBox_cep.Text;
+            string cidade = textBox_cidade.Text;
+            string complemento = textBox_complemento.Text;
+
+
+
+
+            //if (!nome.ValidarBrankSpace() || !documento.ValidarBrankSpace() || !telefone.ValidarBrankSpace()
+            //    || !dataNascimento.ValidarBrankSpace() || !estado.ValidarBrankSpace() || !logradouro.ValidarBrankSpace()||
+            //    !numero.ValidarBrankSpace() || !bairro.ValidarBrankSpace() || !cep.ValidarBrankSpace() || !cidade.ValidarBrankSpace())
+            //{
+            //    MessageBox.Show("Não pode conter conteudo obrigatorio em branco!");
+            //}
+            //else if (!telefone.ValidarTelefone())
+            //{
+            //    MessageBox.Show("Telefone invalido");
+            //}else if (radioButton.IsChecked == true) {
+            //    if (!documento.ValidarCPF()) {
+
+            //        MessageBox.Show("CPF invalido!");
+            //    }
+            //}else if (radioButton1.IsChecked == true) {
+            //    if (!documento.ValidarCNPJ()) {
+            //        MessageBox.Show("CNPJ invalido!");
+            //    }
+            //}else if (!dataNascimento.ValidarData()) {
+            //    MessageBox.Show("Data invalida!");
+            //}
+
+
+            Cliente cliente = new Cliente(nome, documento);
+            singleton.InserirCliente(cliente);
+           
+            this.Close();
+
+
+        }
 
 
 
@@ -87,61 +143,7 @@ namespace LocadoraCarros
 
         }
 
-        private void button_salvarCliente_Click(object sender, RoutedEventArgs e)
-        {
-
-            string nome = textBox_nome.Text;
-
-            string documento = textBox_Documento.Text;
-            string telefone = textBox_telefone.Text;
-            string dataNascimento = textBox_DataNascimento.Text;
-            string estado = textBox_estado.Text;
-            string logradouro = textBox_logradouro.Text;
-            string numero = textBox_numero.Text;
-            string bairro = textBox_bairro.Text;
-            string cep = textBox_cep.Text;
-            string cidade = textBox_cidade.Text;
-            string complemento = textBox_complemento.Text;
-
-            if (radioButton.IsChecked == true)
-            {
-                if (!documento.ValidarCPF())
-                {
-
-                    MessageBox.Show("CPF invalido!");
-                }
-            }
-
-            if (radioButton1.IsChecked == true)
-            {
-                if (!documento.ValidarCNPJ())
-                {
-                    MessageBox.Show("CNPJ invalido!");
-                }
-            }
-
-            if (!dataNascimento.ValidarData()) {
-                MessageBox.Show("Data invalida!");
-            }
-
-
-
-            if (!nome.ValidarBrankSpace() || !documento.ValidarBrankSpace() || !telefone.ValidarBrankSpace())
-            {
-                MessageBox.Show("Não pode conter conteudo obrigatorio em branco!");
-            }
-            else if (!telefone.ValidarTelefone())
-            {
-                MessageBox.Show("Telefone invalido");
-            }
-            else
-            {
-                Cliente cliente = new Cliente(nome, documento);
-                repositorio.Inserir(cliente);
-                this.Close();
-            }
-
-        }
+      
 
 
         private void radioButton_Checked(object sender, RoutedEventArgs e)
@@ -153,5 +155,7 @@ namespace LocadoraCarros
         {
 
         }
+
+      
     }
 }

@@ -6,7 +6,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace LocadoraCarros {
-    class Carro {
+    public class Carro {
 
         public string Modelo { get; private set; }
         public string Ano { get; private set; }
@@ -29,6 +29,9 @@ namespace LocadoraCarros {
           
 
         
+        }
+        public override string ToString() {
+            return string.Format("{0}-{1}-{2}-{3}-{4}-{5}", Modelo, Ano, Placa, Quilometragem, Cor, Chaci);
         }
 
         public void GpsCarro(Localizacao localizacao) {

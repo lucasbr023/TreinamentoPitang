@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace LocadoraCarros {
-    enum Status {
+    public enum Status {
 
         Disponivel = 1,
         Reservado = 2,

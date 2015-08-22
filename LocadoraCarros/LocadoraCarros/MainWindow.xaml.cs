@@ -1,4 +1,5 @@
-﻿using LocadoraCarros.Repositorios;
+﻿using LocadoraCarros.Negocio;
+using LocadoraCarros.Repositorios;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -24,7 +25,7 @@ namespace LocadoraCarros {
             InitializeComponent();
         }
 
-        RepositorioCliente repositorioCliente = new RepositorioCliente();
+        Singleton singleton = Singleton.GetInstancia();
         
 
         private void ComboBox_SelectionChanged_1(object sender, SelectionChangedEventArgs e) {
@@ -45,15 +46,11 @@ namespace LocadoraCarros {
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e) {
-            string arquivo = @"C:\Users\NataliaVitória\Desktop\teste2.txt";
 
-            StreamReader sr = new StreamReader(arquivo, Encoding.UTF8);
-            string linha = sr.ReadLine();
+            var itens = singleton.BuscarTodosCarros().OrderBy(x => x.Placa);
+            foreach (var item in singleton.BuscarTodosCarros()) {
+                listView.Items.Add(item.ToString());
 
-
-            while (linha != null) {
-                listView.Items.Add(linha);
-                linha = sr.ReadLine();
             }
 
 
@@ -73,25 +70,28 @@ namespace LocadoraCarros {
         private void Button_Click_2(object sender, RoutedEventArgs e) {
 
 
-            string arquivo = @"C:\Users\NataliaVitória\Desktop\teste1.txt";
-
-            StreamReader sr = new StreamReader(arquivo, Encoding.UTF8);
-            string linha = sr.ReadLine();
-
-
-            while (linha != null) { 
-                listView.Items.Add(linha); 
-                linha = sr.ReadLine();
+            
+            listView.Items.Clear();
+            var itens = singleton.BuscarTodosClientes().OrderByDescending(x=>x.Nome);
+            foreach (Cliente cliente in itens) {
+                listView.Items.Add(cliente.ToString());
             }
 
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show(repositorioCliente.Procurar("10758480407").ToString());
+
+            var pesquisa = singleton.BuscarTodosClientes().Where(x => x.Documento.Equals("10758480407"));
+            foreach (var item in singleton.BuscarTodosClientes()) {
+                MessageBox.Show(item.ToString());
+            }
+            //MessageBox.Show(singleton.ProcurarCliente("10758480407").Nome);
             
 
 
         }
+
+        
     }
 }

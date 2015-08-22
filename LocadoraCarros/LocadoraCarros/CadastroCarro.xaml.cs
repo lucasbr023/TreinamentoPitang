@@ -28,8 +28,31 @@ namespace LocadoraCarros {
         RepositorioCarro RepositorioCarros = new RepositorioCarro();
 
 
-       
 
+        private void button_salvarCarro_Click(object sender, RoutedEventArgs e) {
+
+            DataTable table = new DataTable();
+            table.Columns.Add("modelo");
+            table.Columns.Add("ano");
+            table.Columns.Add("placa");
+            table.Columns.Add("quilometragem");
+            table.Columns.Add("cor");
+            table.Columns.Add("chaci");
+
+            string ano = textBox_Ano.Text;
+            string placa = textBox_Placa.Text;
+            string cor = textBox_Cor.Text;
+            int quilometragem = int.Parse(textBox_Quilometragem.Text);
+            string chaci = textBox_Chaci.Text;
+            int qtdPortas = int.Parse(textBox_qtdPortas.Text);
+            string modelo = textBox_Modelo.Text;
+
+
+            Carro carro = new Carro(modelo, ano, placa, quilometragem, cor, chaci);
+            RepositorioCarros.Inserir(carro);
+            MessageBox.Show("Carro adicionado com sucesso!");
+            this.Close();
+        }
 
 
 
@@ -77,30 +100,6 @@ namespace LocadoraCarros {
 
         }
 
-        private void button_salvarCarro_Click(object sender, RoutedEventArgs e)
-        {
-
-            DataTable table = new DataTable();
-            table.Columns.Add("modelo");
-            table.Columns.Add("ano");
-            table.Columns.Add("placa");
-            table.Columns.Add("quilometragem");
-            table.Columns.Add("cor");
-            table.Columns.Add("chaci");
-
-            string ano = textBox_Ano.Text;
-            string placa = textBox_Placa.Text;
-            string cor = textBox_Cor.Text;
-            int quilometragem = int.Parse(textBox_Quilometragem.Text);
-            string chaci = textBox_Chaci.Text;
-            int qtdPortas = int.Parse(textBox_qtdPortas.Text);
-            string modelo = textBox_Modelo.Text;
-
-
-            Carro carro = new Carro(modelo, ano, placa, quilometragem, cor, chaci);
-            RepositorioCarros.Inserir(carro);
-            MessageBox.Show("Carro adicionado com sucesso!");
-            this.Close();
-        }
+       
     }
 }

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace LocadoraCarros {
-    enum Categoria {
+    public enum Categoria {
         HatchCompacto = 0,
         HatchMédioEsportivo = 1,
         SedaCompacto = 2,

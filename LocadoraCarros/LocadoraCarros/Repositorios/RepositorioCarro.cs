@@ -6,32 +6,56 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace LocadoraCarros.Repositorios {
-    class RepositorioCarro : IRepositorio<Carro> {
+    public class RepositorioCarro : IRepositorio<Carro> {
+        private List<Carro> repositorio = new List<Carro>();
 
-        List<Carro> Repositorio = new List<Carro>();
+        public RepositorioCarro() {
 
-        public void Inserir(Carro entidade) {
-            Repositorio.Add(entidade);
 
-            using (StreamWriter sw = new StreamWriter(@"C:\Users\NataliaVitória\Desktop\teste2.txt")) {
-                sw.WriteLine("nome: " + entidade.Modelo.ToString() + " - Documento: " + entidade.Chaci.ToString());
-            }
-        }
-
-        public void Deletar(Carro entidade) {
-            Repositorio.Remove(entidade);
         }
 
         public void Atualizar(Carro entidade) {
-            throw new NotImplementedException();
+            Carro aux = Procurar(entidade.Placa);
+            int index = repositorio.IndexOf(aux);
+            repositorio.Insert(index, entidade);
+        }
+
+        public List<Carro> BuscarTodos() {
+            //return Repositorio;
+            return repositorio;
+        }
+
+        public void Deletar(Carro entidade) {
+            repositorio.Remove(entidade);
+        }
+
+        public void Inserir(Carro entidade) {
+            repositorio.Add(entidade);
+
+
+
+            using (StreamWriter sw = new StreamWriter(@"C:\Users\Lucas\Desktop\teste.txt")) {
+                sw.WriteLine(entidade.ToString());
+            }
+
+
         }
 
         public Carro Procurar(string codigo) {
-            throw new NotImplementedException();
+            foreach (Carro carro in repositorio) {
+                if (carro.Placa.Equals(codigo)) {
+
+                    return carro;
+                }
+
+            }
+            return null;
+
         }
 
-        public Carro[] BuscarTodos() {
-            throw new NotImplementedException();
-        }
+
+
     }
+
+
 }

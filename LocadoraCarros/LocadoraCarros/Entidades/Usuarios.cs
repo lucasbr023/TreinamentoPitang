@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace LocadoraCarros {
-    class Usuarios : Pessoa {
+    public class Usuarios : Pessoa {
 
 
 

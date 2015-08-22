@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace LocadoraCarros {
-    class Cliente : Pessoa{
+    public class Cliente : Pessoa{
       
         public Endereco Endereco { get; set; }
         public string DadosCartao { get; set; }
@@ -17,9 +17,13 @@ namespace LocadoraCarros {
 
         }
 
+        public override string ToString() {
+            return string.Format("{0}-{1}", Nome, Documento);
+        }
 
 
-      
+
+
 
 
 

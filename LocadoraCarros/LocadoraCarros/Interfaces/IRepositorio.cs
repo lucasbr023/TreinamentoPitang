@@ -5,14 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace LocadoraCarros {
-    public interface IRepositorio<T> where T :class {
+    public interface IRepositorio<T> {
 
        // IEnumerable<T> List { get; }
         void Inserir(T entidade);
         void Deletar(T entidade);
         void Atualizar(T entidade);
         T Procurar(string codigo);
-        T[] BuscarTodos();
+        List<T> BuscarTodos();
 
     }
 }
