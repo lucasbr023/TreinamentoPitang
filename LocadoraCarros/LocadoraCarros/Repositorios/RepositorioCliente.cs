@@ -5,6 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
+using System.Xml;
+using System.Text;
+  
 
 namespace LocadoraCarros.Repositorios {
     public class RepositorioCliente : IRepositorio<Cliente>{
@@ -37,10 +40,9 @@ namespace LocadoraCarros.Repositorios {
             repositorio.Add(entidade);
 
 
-
-            using (StreamWriter sw = new StreamWriter(@"C:\Users\Lucas\Desktop\teste.txt")) {
-                sw.WriteLine(entidade.ToString());
-            }
+            //using (StreamWriter sw = new StreamWriter(@"C:\Users\Lucas\Desktop\teste.txt")) {
+            //    sw.WriteLine(entidade.ToString());
+            //}
 
 
         }

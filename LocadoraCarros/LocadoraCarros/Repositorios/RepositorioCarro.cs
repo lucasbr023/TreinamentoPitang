@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace LocadoraCarros.Repositorios {
+
     public class RepositorioCarro : IRepositorio<Carro> {
         private List<Carro> repositorio = new List<Carro>();
 
@@ -34,9 +35,9 @@ namespace LocadoraCarros.Repositorios {
 
 
 
-            using (StreamWriter sw = new StreamWriter(@"C:\Users\Lucas\Desktop\teste.txt")) {
-                sw.WriteLine(entidade.ToString());
-            }
+            //using (StreamWriter sw = new StreamWriter(@"C:\Users\Lucas\Desktop\teste.txt")) {
+            //    sw.WriteLine(entidade.ToString());
+            //}
 
 
         }

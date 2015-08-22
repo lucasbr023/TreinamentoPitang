@@ -11,14 +11,16 @@
             <ComboBox Width="120" SelectionChanged="ComboBox_SelectionChanged_1">
                 
                 <Button Content="Novo Cliente" Click="Button_Click"/>
-                <Button Content="Ultimo add" Click="Button_Click_3"/>
                 <Button Content="Todos Clientes" Click="Button_Click_2"/>
             </ComboBox>
             <ComboBox Width="120" SelectionChanged="ComboBox_SelectionChanged_2">
                 <Button Content="Cadastro Carro" Click="Button_Click_cadastroCarro"/>
                 <Button Content="Todos os carros" Click="Button_Click_1"/>
             </ComboBox>
-            <ComboBox Width="120" SelectionChanged="ComboBox_SelectionChanged_3"/>
+            <ComboBox Width="120" SelectionChanged="ComboBox_SelectionChanged_3">
+                <Button Content="Aluguel" Click="Button_Aluguel"/>
+                <Button Content="Todos alugueis" Click="Button_todos_alugueis"/>
+            </ComboBox>
         </Menu>
         <ListView x:Name="listView" HorizontalAlignment="Left" Height="242" Margin="10,31,0,0" VerticalAlignment="Top" Width="497" SelectionChanged="listView_SelectionChanged">
             <ListView.View>

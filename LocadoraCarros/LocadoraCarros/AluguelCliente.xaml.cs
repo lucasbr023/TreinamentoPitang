@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LocadoraCarros.Negocio;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,56 @@ namespace LocadoraCarros {
     public partial class AluguelCliente : Window {
         public AluguelCliente() {
             InitializeComponent();
+        }
+
+        Singleton singleton = Singleton.GetInstancia();
+
+        private void textBox_TextChanged(object sender, TextChangedEventArgs e) {
+
+        }
+
+        private void textBox1_TextChanged(object sender, TextChangedEventArgs e) {
+
+        }
+
+        private void button_salvarAluguel_Click(object sender, RoutedEventArgs e) {
+            string documentoCliente = textBox.Text;
+            string placaCarro = textBox1.Text;
+            string codigo = textBox2.Text;
+
+            var clientes = singleton.BuscarTodosClientes();
+            var carros = singleton.BuscarTodosCarros();
+            var pesquisaCliente = from c in clientes
+                                  where c.Documento == documentoCliente
+                                  select c;
+
+            var pesquisaCarro = from c in carros
+                                where c.Placa == placaCarro
+                                select c;
+
+            foreach (Carro carro in pesquisaCarro) {
+                carro.CodigoAluguel = codigo;
+            }
+                                  
+
+            foreach (Cliente item in clientes) {
+                item.CodigoAluguel = codigo;
+            }
+
+            var query = from carro in pesquisaCarro
+                        join cliente in pesquisaCliente 
+                        on carro.CodigoAluguel equals cliente.CodigoAluguel
+                        select new Aluguel(cliente, carro, codigo);
+
+            foreach (Aluguel item in query) {
+                singleton.InserirAluguel(item);
+            }
+
+            this.Close();
+        }
+
+        private void textBox2_TextChanged(object sender, TextChangedEventArgs e) {
+
         }
     }
 }

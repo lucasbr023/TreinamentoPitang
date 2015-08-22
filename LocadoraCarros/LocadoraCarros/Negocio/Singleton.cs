@@ -11,6 +11,7 @@ namespace LocadoraCarros.Negocio {
 
         private RepositorioCliente repositorioCliente;
         private RepositorioCarro repositorioCarro;
+        private RepositorioAluguel repositorioAluguel;
 
         private Singleton()  {
             Init();
@@ -28,6 +29,7 @@ namespace LocadoraCarros.Negocio {
         public void Init() {
             repositorioCliente = new RepositorioCliente();
             repositorioCarro = new RepositorioCarro();
+            repositorioAluguel = new RepositorioAluguel();
         }
 
         public void InserirCliente(Cliente cliente) {
@@ -55,6 +57,19 @@ namespace LocadoraCarros.Negocio {
         }
         public Carro ProcurarCarro(string codigo) {
             return repositorioCarro.Procurar(codigo);
+        }
+        public void InserirAluguel(Aluguel aluguel) {
+            repositorioAluguel.Inserir(aluguel);
+        }
+        public void RemoverCarro(Aluguel aluguel) {
+            repositorioAluguel.Deletar(aluguel);
+        }
+
+        public List<Aluguel> BuscarTodosAlugueis() {
+            return repositorioAluguel.BuscarTodos();
+        }
+        public Aluguel ProcurarAluguel(string codigo) {
+            return repositorioAluguel.Procurar(codigo);
         }
     }
 }

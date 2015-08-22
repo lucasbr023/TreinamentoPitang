@@ -25,8 +25,57 @@ namespace LocadoraCarros {
             InitializeComponent();
         }
 
+        ArquivoXMLCliente arquivoCliente = ArquivoXMLCliente.GetInstancia();
+        ArquivoXMLCarro arquivoCarro =  ArquivoXMLCarro.GetInstancia();
         Singleton singleton = Singleton.GetInstancia();
         
+
+       
+
+        private void Button_Click(object sender, RoutedEventArgs e) {
+            CadastroCliente cadastro = new CadastroCliente();
+            cadastro.Show();
+        }
+        private void Button_Click_cadastroCarro(object sender, RoutedEventArgs e) {
+            CadastroCarro cadastro = new CadastroCarro();
+            cadastro.Show();
+        }
+
+        private void Button_Aluguel(object sender, RoutedEventArgs e) {
+            AluguelCliente aluguel = new AluguelCliente();
+            aluguel.Show();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e) {
+
+            listView.Items.Clear();
+
+            var itens = singleton.BuscarTodosCarros().OrderBy(x => x.Placa);
+            foreach (Carro carro in itens) {
+                listView.Items.Add(carro.ToString());
+
+            }
+
+        }
+        private void Button_Click_2(object sender, RoutedEventArgs e) {
+  
+            listView.Items.Clear();
+            var itens = singleton.BuscarTodosClientes().OrderByDescending(x=>x.Nome);
+            foreach (Cliente cliente in itens) {
+                listView.Items.Add(cliente.ToString());
+            }
+
+        }
+        private void Button_todos_alugueis(object sender, RoutedEventArgs e) {
+            listView.Items.Clear();
+
+            var pesquisa = singleton.BuscarTodosAlugueis();
+
+            foreach (Aluguel item in pesquisa) {
+                listView.Items.Add(item.ToString());
+
+            }
+        }
 
         private void ComboBox_SelectionChanged_1(object sender, SelectionChangedEventArgs e) {
 
@@ -39,59 +88,10 @@ namespace LocadoraCarros {
         private void ComboBox_SelectionChanged_3(object sender, SelectionChangedEventArgs e) {
 
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e) {
-            CadastroCliente cadastro = new CadastroCliente();
-            cadastro.Show();
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e) {
-
-            var itens = singleton.BuscarTodosCarros().OrderBy(x => x.Placa);
-            foreach (var item in singleton.BuscarTodosCarros()) {
-                listView.Items.Add(item.ToString());
-
-            }
-
-
-
-        }
-
-        private void Button_Click_cadastroCarro(object sender, RoutedEventArgs e) {
-            CadastroCarro cadastro = new CadastroCarro();
-            cadastro.Show();
-        }
-
         private void listView_SelectionChanged(object sender, SelectionChangedEventArgs e) {
 
 
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e) {
-
-
-            
-            listView.Items.Clear();
-            var itens = singleton.BuscarTodosClientes().OrderByDescending(x=>x.Nome);
-            foreach (Cliente cliente in itens) {
-                listView.Items.Add(cliente.ToString());
-            }
-
-        }
-
-        private void Button_Click_3(object sender, RoutedEventArgs e)
-        {
-
-            var pesquisa = singleton.BuscarTodosClientes().Where(x => x.Documento.Equals("10758480407"));
-            foreach (var item in singleton.BuscarTodosClientes()) {
-                MessageBox.Show(item.ToString());
-            }
-            //MessageBox.Show(singleton.ProcurarCliente("10758480407").Nome);
-            
-
-
-        }
-
-        
     }
 }

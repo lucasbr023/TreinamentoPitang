@@ -28,13 +28,15 @@
         <TextBox x:Name="textBox_bairro" HorizontalAlignment="Left" Height="23" Margin="73,214,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="422" TextChanged="textBox_bairro_TextChanged"/>
         <TextBox x:Name="textBox_estado" HorizontalAlignment="Left" Height="23" Margin="71,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="127" TextChanged="textBox_estado_TextChanged"/>
         <TextBox x:Name="textBox_cidade" HorizontalAlignment="Left" Height="23" Margin="252,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="243" TextChanged="textBox_cidade_TextChanged"/>
-        <TextBox x:Name="textBox_complemento" HorizontalAlignment="Left" Height="40" Margin="117,269,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="303" TextChanged="textBox_complemento_TextChanged"/>
+        <TextBox x:Name="textBox_complemento" HorizontalAlignment="Left" Height="23" Margin="117,269,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="303" TextChanged="textBox_complemento_TextChanged"/>
         <Label x:Name="label_Copy11" Content="Telefone" HorizontalAlignment="Left" Margin="244,108,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="textBox_telefone" HorizontalAlignment="Left" Height="23" Margin="298,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197" TextChanged="textBox_telefone_TextChanged"/>
         <Button x:Name="button_salvarCliente" Content="Salvar" HorizontalAlignment="Left" Margin="432,289,0,0" VerticalAlignment="Top" Width="75" Click="button_salvarCliente_Click"/>
         <Button Content="Cancelar" HorizontalAlignment="Left" Margin="432,262,0,0" VerticalAlignment="Top" Width="75"/>
         <RadioButton x:Name="radioButton" Content="CPF" HorizontalAlignment="Left" Margin="310,85,0,0" VerticalAlignment="Top" Checked="radioButton_Checked"/>
         <RadioButton x:Name="radioButton1" Content="CNPJ" HorizontalAlignment="Left" Margin="367,85,0,0" VerticalAlignment="Top" Checked="radioButton1_Checked"/>
+        <Label x:Name="label_Copy12" Content="Codigo Cliente" HorizontalAlignment="Left" Margin="24,291,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="117,294,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="textBox_TextChanged"/>
 
     </Grid>
 </Window>

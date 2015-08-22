@@ -9,16 +9,18 @@ namespace LocadoraCarros {
       
         public Endereco Endereco { get; set; }
         public string DadosCartao { get; set; }
+        public string CodigoAluguel { get; set; }
         
 
-        public Cliente(string nome, string documento) {
+        public Cliente(string nome, string documento, string codigoAluguel = null) {
             Nome = nome;
             Documento = documento;
+            CodigoAluguel = codigoAluguel;
 
         }
 
         public override string ToString() {
-            return string.Format("{0}-{1}", Nome, Documento);
+            return string.Format("Nome: {0}- Documento: {1}", Nome, Documento);
         }
 
 

@@ -59,6 +59,9 @@
     <Compile Include="AluguelCliente.xaml.cs">
       <DependentUpon>AluguelCliente.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ArquivoXMLAlugueis.cs" />
+    <Compile Include="ArquivoXMLCarro.cs" />
+    <Compile Include="ArquivoXMLCliente.cs" />
     <Compile Include="CadastroCarro.xaml.cs">
       <DependentUpon>CadastroCarro.xaml</DependentUpon>
     </Compile>
@@ -72,6 +75,7 @@
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
     <Compile Include="Negocio\Singleton.cs" />
+    <Compile Include="Repositorios\RepositorioAluguel.cs" />
     <Compile Include="Repositorios\RepositorioCarro.cs" />
     <Compile Include="Repositorios\RepositorioCliente.cs" />
     <Compile Include="Validacao.cs" />

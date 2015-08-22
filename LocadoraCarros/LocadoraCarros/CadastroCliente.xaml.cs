@@ -38,8 +38,9 @@ namespace LocadoraCarros
 
         private void button_salvarCliente_Click(object sender, RoutedEventArgs e) {
 
-            string nome = textBox_nome.Text;
+            ArquivoXMLCliente arquivo = ArquivoXMLCliente.GetInstancia();
 
+            string nome = textBox_nome.Text;
             string documento = textBox_Documento.Text;
             string telefone = textBox_telefone.Text;
             string dataNascimento = textBox_DataNascimento.Text;
@@ -50,7 +51,7 @@ namespace LocadoraCarros
             string cep = textBox_cep.Text;
             string cidade = textBox_cidade.Text;
             string complemento = textBox_complemento.Text;
-
+            
 
 
 
@@ -79,6 +80,7 @@ namespace LocadoraCarros
 
             Cliente cliente = new Cliente(nome, documento);
             singleton.InserirCliente(cliente);
+            arquivo.Gravar(nome, documento, dataNascimento, telefone);
            
             this.Close();
 
@@ -156,6 +158,8 @@ namespace LocadoraCarros
 
         }
 
-      
+        private void textBox_TextChanged(object sender, TextChangedEventArgs e) {
+
+        }
     }
 }

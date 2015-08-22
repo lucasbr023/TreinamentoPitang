@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Windows.Data;
 using System.Data;
-
+using LocadoraCarros.Negocio;
 
 namespace LocadoraCarros {
     /// <summary>
@@ -25,20 +25,14 @@ namespace LocadoraCarros {
             InitializeComponent();
         }
 
-        RepositorioCarro RepositorioCarros = new RepositorioCarro();
 
-
+        Singleton singleton = Singleton.GetInstancia();
 
         private void button_salvarCarro_Click(object sender, RoutedEventArgs e) {
 
-            DataTable table = new DataTable();
-            table.Columns.Add("modelo");
-            table.Columns.Add("ano");
-            table.Columns.Add("placa");
-            table.Columns.Add("quilometragem");
-            table.Columns.Add("cor");
-            table.Columns.Add("chaci");
+            ArquivoXMLCarro arquivo = ArquivoXMLCarro.GetInstancia();
 
+            string status = "Dispónivel";
             string ano = textBox_Ano.Text;
             string placa = textBox_Placa.Text;
             string cor = textBox_Cor.Text;
@@ -48,9 +42,9 @@ namespace LocadoraCarros {
             string modelo = textBox_Modelo.Text;
 
 
-            Carro carro = new Carro(modelo, ano, placa, quilometragem, cor, chaci);
-            RepositorioCarros.Inserir(carro);
-            MessageBox.Show("Carro adicionado com sucesso!");
+            Carro carro = new Carro(modelo, placa, status);
+            singleton.InserirCarro(carro);
+            arquivo.Gravar(modelo,ano,placa,quilometragem.ToString(),cor,chaci,qtdPortas.ToString(),status);
             this.Close();
         }
 
