@@ -15,33 +15,23 @@ namespace LocadoraCarros {
         public string Cor { get; set; }
         public string Chaci { get; private set; }
         public int QtdPortas { get; set; }
-        public string Status { get; set; }
+        public bool Status { get; set; }
         public string CodigoAluguel { get; set; }
 
 
 
 
 
-        public Carro(string modelo, string placa, string status,string codigoAluguel = null) {
+        public Carro(string modelo, string placa, bool status,string codigoAluguel = null) {
             Modelo = modelo;
             Placa = placa;
             Status = status;
             CodigoAluguel = codigoAluguel;
         }
 
-        //public Carro(string modelo, string ano, string placa, int quilometragem, string cor, string chaci) {
-        //    Modelo = modelo;
-        //    Ano = ano;
-        //    Placa = placa;
-        //    Quilometragem = quilometragem;
-        //    Cor = cor;
-        //    Chaci = chaci;
-          
-
         
-        //}
         public override string ToString() {
-            return string.Format("Modelo: {0}- Placa: {1}", Modelo, Placa);
+            return string.Format("Modelo: {0}- Placa: {1} - Disponibilidade: {2}", Modelo, Placa, Status ? "Indisponivel": "Disponivel");
         }
 
         public void GpsCarro(Localizacao localizacao) {

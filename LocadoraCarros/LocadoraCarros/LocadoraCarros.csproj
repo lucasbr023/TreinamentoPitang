@@ -71,9 +71,6 @@
     <Compile Include="Entidades\Endereco.cs" />
     <Compile Include="Entidades\Status.cs" />
     <Compile Include="Entidades\Usuarios.cs" />
-    <Compile Include="Login.xaml.cs">
-      <DependentUpon>Login.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Negocio\Singleton.cs" />
     <Compile Include="Repositorios\RepositorioAluguel.cs" />
     <Compile Include="Repositorios\RepositorioCarro.cs" />
@@ -88,10 +85,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="CadastroCliente.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Login.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

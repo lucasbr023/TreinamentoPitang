@@ -32,7 +32,6 @@ namespace LocadoraCarros {
 
             ArquivoXMLCarro arquivo = ArquivoXMLCarro.GetInstancia();
 
-            string status = "Dispónivel";
             string ano = textBox_Ano.Text;
             string placa = textBox_Placa.Text;
             string cor = textBox_Cor.Text;
@@ -42,9 +41,9 @@ namespace LocadoraCarros {
             string modelo = textBox_Modelo.Text;
 
 
-            Carro carro = new Carro(modelo, placa, status);
+            Carro carro = new Carro(modelo, placa, false);
             singleton.InserirCarro(carro);
-            arquivo.Gravar(modelo,ano,placa,quilometragem.ToString(),cor,chaci,qtdPortas.ToString(),status);
+            arquivo.Gravar(modelo,ano,placa,quilometragem.ToString(),cor,chaci,qtdPortas.ToString(),false.ToString());
             this.Close();
         }
 

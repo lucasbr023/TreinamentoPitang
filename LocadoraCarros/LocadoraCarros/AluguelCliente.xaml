@@ -7,12 +7,12 @@
         mc:Ignorable="d"
         Title="AluguelCliente"  Height="350" Width="525">
     <Grid>
-        <Label x:Name="label" Content="Cliente" HorizontalAlignment="Left" Margin="31,37,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Label x:Name="label_Copy" Content="Carro" HorizontalAlignment="Left" Margin="33,73,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Button x:Name="button_salvarAluguel" Content="Salvar" HorizontalAlignment="Left" Margin="432,289,0,0" VerticalAlignment="Top" Width="75" Click="button_salvarAluguel_Click"/>
+        <Label x:Name="label" Content="Documento Cliente" HorizontalAlignment="Left" Margin="1,46,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label x:Name="label_Copy" Content="Placa Carro" HorizontalAlignment="Left" Margin="45,76,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Button x:Name="button_salvarAluguel" Content="Salvar" HorizontalAlignment="Left" Margin="425,289,0,0" VerticalAlignment="Top" Width="75" Click="button_salvarAluguel_Click"/>
         <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="124,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" TextChanged="textBox_TextChanged"/>
         <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="124,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" TextChanged="textBox1_TextChanged"/>
-        <Label x:Name="label_Copy1" Content="Carro" HorizontalAlignment="Left" Margin="33,104,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label x:Name="label_Copy1" Content="Codigo Aluguel" HorizontalAlignment="Left" Margin="22,105,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
         <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="23" Margin="124,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" TextChanged="textBox2_TextChanged"/>
 
     </Grid>

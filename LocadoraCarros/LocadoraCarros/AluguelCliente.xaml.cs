@@ -48,7 +48,13 @@ namespace LocadoraCarros {
                                 select c;
 
             foreach (Carro carro in pesquisaCarro) {
-                carro.CodigoAluguel = codigo;
+                if (carro.Status == false) {
+                    carro.CodigoAluguel = codigo;
+                    carro.Status = true;
+                }
+                else {
+                    MessageBox.Show("Carro Indisponivel!");
+                }
             }
                                   
 

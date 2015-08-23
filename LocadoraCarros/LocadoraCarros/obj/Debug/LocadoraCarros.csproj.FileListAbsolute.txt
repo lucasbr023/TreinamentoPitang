@@ -123,7 +123,6 @@ C:\Users\Lucas\Desktop\TreinamentoPitang\TreinamentoPitang\LocadoraCarros\Locado
 C:\Users\Lucas\Desktop\TreinamentoPitang\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\AluguelCliente.g.cs
 C:\Users\Lucas\Desktop\TreinamentoPitang\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\CadastroCarro.g.cs
 C:\Users\Lucas\Desktop\TreinamentoPitang\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\CadastroCliente.g.cs
-C:\Users\Lucas\Desktop\TreinamentoPitang\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\Login.g.cs
 C:\Users\Lucas\Desktop\TreinamentoPitang\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\MainWindow.g.cs
 C:\Users\Lucas\Desktop\TreinamentoPitang\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\App.g.cs
 C:\Users\Lucas\Desktop\TreinamentoPitang\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\LocadoraCarros_MarkupCompile.cache
@@ -131,7 +130,6 @@ C:\Users\Lucas\Desktop\TreinamentoPitang\TreinamentoPitang\LocadoraCarros\Locado
 C:\Users\Lucas\Desktop\TreinamentoPitang\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\AluguelCliente.baml
 C:\Users\Lucas\Desktop\TreinamentoPitang\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\CadastroCarro.baml
 C:\Users\Lucas\Desktop\TreinamentoPitang\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\CadastroCliente.baml
-C:\Users\Lucas\Desktop\TreinamentoPitang\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\Login.baml
 C:\Users\Lucas\Desktop\TreinamentoPitang\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\MainWindow.baml
 C:\Users\Lucas\Desktop\TreinamentoPitang\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\LocadoraCarros.g.resources
 C:\Users\Lucas\Desktop\TreinamentoPitang\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\LocadoraCarros.Properties.Resources.resources
