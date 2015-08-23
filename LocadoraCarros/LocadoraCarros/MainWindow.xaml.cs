@@ -62,7 +62,9 @@ namespace LocadoraCarros {
             listView.Items.Clear();
             var itens = singleton.BuscarTodosClientes().OrderByDescending(x=>x.Nome);
             foreach (Cliente cliente in itens) {
+               
                 listView.Items.Add(cliente.ToString());
+                
             }
 
         }

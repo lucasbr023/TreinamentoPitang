@@ -25,22 +25,26 @@ namespace LocadoraCarros {
 
         Singleton singleton = Singleton.GetInstancia();
 
-        public void Gravar(string Modelo, string Ano, string Placa, string Quilometragem, string Cor, string Chaci, string QtdPortas, string status) {
+        public void Gravar(Aluguel aluguel) {
             XmlTextWriter arquivo;
             arquivo = new XmlTextWriter(@"C:\Users\Lucas\Desktop\Aluguel.txt", Encoding.UTF8);
 
 
             var carros = singleton.BuscarTodosCarros();
+            var clientes = singleton.BuscarTodosClientes();
+
+            foreach (var item in clientes) {
+                arquivo.WriteStartElement("Cliente");
+                arquivo.WriteElementString("Nome", item.Nome);
+                arquivo.WriteElementString("Documento", item.Documento);
+                arquivo.WriteElementString("Codigo", item.CodigoAluguel);
+                arquivo.WriteEndElement();
+            }
             foreach (var item in carros) {
                 arquivo.WriteStartElement("Carro");
-                arquivo.WriteElementString("Modelo", Modelo);
-                arquivo.WriteElementString("Ano", Ano);
-                arquivo.WriteElementString("Placa", Placa);
-                arquivo.WriteElementString("Quilometragem", Quilometragem);
-                arquivo.WriteElementString("Cor", Cor);
-                arquivo.WriteElementString("Chaci", Chaci);
-                arquivo.WriteElementString("QtdPortas", QtdPortas);
-                arquivo.WriteElementString("Status", status);
+                arquivo.WriteElementString("Modelo", item.Modelo);
+                arquivo.WriteElementString("Placa", item.Placa);
+                arquivo.WriteElementString("Codigo", item.CodigoAluguel);
                 arquivo.WriteEndElement();
             }
 

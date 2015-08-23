@@ -8,8 +8,7 @@ using System.Threading.Tasks;
 namespace LocadoraCarros {
     public static class Validacao {
 
-        public static bool ValidarCPF(this string documento)
-        {
+        public static bool ValidarCPF(this string documento) {
 
             int[] multiplicador1 = new int[9] { 10, 9, 8, 7, 6, 5, 4, 3, 2 };
             int[] multiplicador2 = new int[10] { 11, 10, 9, 8, 7, 6, 5, 4, 3, 2 };
@@ -23,8 +22,7 @@ namespace LocadoraCarros {
             documento = documento.Replace(".", "").Replace("-", "");
 
 
-            if (documento.Length != 11)
-            {
+            if (documento.Length != 11) {
                 return false;
             }
 
@@ -59,8 +57,7 @@ namespace LocadoraCarros {
 
         }
 
-        public static bool ValidarCNPJ(this string documento)
-        {
+        public static bool ValidarCNPJ(this string documento) {
             int[] multiplicador1 = new int[12] { 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2 };
             int[] multiplicador2 = new int[13] { 6, 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2 };
 
@@ -122,8 +119,7 @@ namespace LocadoraCarros {
         public static bool ValidarData(this string dataNascimento) {
             string regex = @"^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[012])/[12][0-9]{3}$";
 
-            if (Regex.IsMatch(dataNascimento, regex))
-            {
+            if (Regex.IsMatch(dataNascimento, regex)) {
                 return true;
 
             }
@@ -135,9 +131,21 @@ namespace LocadoraCarros {
         public static bool ValidarBrankSpace(this string espaco) {
             if (espaco.Equals("") || espaco == null) {
                 return false;
-            }else{
+            }
+            else {
                 return true;
             }
         }
+
+        public static bool ValidarPlacaVeiculo(this string placa) {
+            Regex regex = new Regex(@"^[a-zA-Z]{3}\-\d{4}$");
+            if (regex.IsMatch(placa)) {
+                return true;
+            }
+            return false;
+
+        }
+
     }
+
 }

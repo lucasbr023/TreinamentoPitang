@@ -23,6 +23,7 @@ namespace LocadoraCarros {
         }
 
         Singleton singleton = Singleton.GetInstancia();
+        ArquivoXMLAlugueis arquivo = ArquivoXMLAlugueis.GetInstancia();
 
         private void textBox_TextChanged(object sender, TextChangedEventArgs e) {
 
@@ -69,8 +70,10 @@ namespace LocadoraCarros {
 
             foreach (Aluguel item in query) {
                 singleton.InserirAluguel(item);
+                arquivo.Gravar(item);
+                
             }
-
+            
             this.Close();
         }
 
