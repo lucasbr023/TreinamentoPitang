@@ -58,10 +58,15 @@ namespace LocadoraCarros.Negocio {
         public Carro ProcurarCarro(string codigo) {
             return repositorioCarro.Procurar(codigo);
         }
+       
+        public void RemoverCarro(Aluguel aluguel) {
+            repositorioAluguel.Deletar(aluguel);
+        }
+
         public void InserirAluguel(Aluguel aluguel) {
             repositorioAluguel.Inserir(aluguel);
         }
-        public void RemoverCarro(Aluguel aluguel) {
+        public void RemoverAluguel(Aluguel aluguel) {
             repositorioAluguel.Deletar(aluguel);
         }
 
