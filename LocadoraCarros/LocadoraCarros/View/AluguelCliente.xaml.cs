@@ -53,7 +53,6 @@ namespace LocadoraCarros {
             foreach (Carro carro in pesquisaCarro) {
                 if (carro.Status == false) {
                     carro.CodigoAluguel = codigo;
-                    carro.Status = true;
                 }
                 else {
                     MessageBox.Show("Carro Indisponivel!");
@@ -77,9 +76,13 @@ namespace LocadoraCarros {
             var query = from carro in pesquisaCarro
                         join cliente in pesquisaCliente
                         on carro.CodigoAluguel equals cliente.CodigoAluguel
+                        where carro.Status == false
                         select new Aluguel(cliente, carro, codigo);
 
+
+
             foreach (Aluguel item in query) {
+                item.Carro.Status = true;
                 singleton.InserirAluguel(item);
                 arquivo.Gravar(item);
 
@@ -111,7 +114,7 @@ namespace LocadoraCarros {
 
             foreach (Carro carro in pesquisaCarro) {
                 if (carro.Status == true) {
-                    carro.CodigoAluguel = "";
+                    carro.CodigoAluguel = null;
                     carro.Status = false;
                 }
                 else {
@@ -121,7 +124,7 @@ namespace LocadoraCarros {
 
 
             foreach (Cliente item in clientes) {
-                item.CodigoAluguel = "";
+                item.CodigoAluguel = null;
             }
 
             var query = from carro in pesquisaCarro
