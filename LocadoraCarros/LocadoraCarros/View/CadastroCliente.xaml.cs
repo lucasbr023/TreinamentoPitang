@@ -22,12 +22,19 @@ namespace LocadoraCarros
     /// </summary>
     public partial class CadastroCliente : Window
     {
+
+        private static readonly LocadoraContext context = new LocadoraContext();
+
         public CadastroCliente()
         {
             InitializeComponent();
 
+            using (var context = new LocadoraContext()) {
+                context.Clientes.Add(new Cliente("Lucas", "123"));
+            }
 
-        }
+
+        } 
 
 
         Singleton singleton = Singleton.GetInstancia();
@@ -160,6 +167,10 @@ namespace LocadoraCarros
 
         private void textBox_TextChanged(object sender, TextChangedEventArgs e) {
 
+        }
+
+        private void Window_Closed_1(object sender, EventArgs e) {
+            context.Dispose();
         }
     }
 }

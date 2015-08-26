@@ -14,7 +14,7 @@ namespace LocadoraCarros {
         public string Placa { get; private set; }
         public int Quilometragem { get; set; }
         public string Cor { get; set; }
-        public string Chaci { get; private set; }
+        public string Chassi { get; private set; }
         public int QtdPortas { get; set; }
         public bool Status { get; set; }
         public string CodigoAluguel { get; set; }

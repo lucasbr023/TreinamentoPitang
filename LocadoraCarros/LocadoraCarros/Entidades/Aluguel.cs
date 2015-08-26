@@ -8,16 +8,20 @@ namespace LocadoraCarros {
     public class Aluguel {
 
         public int AluguelID { get; set; }
-        public Carro Carro { get; set; }
-        public Cliente Cliente { get; set; }
+
+        public virtual Carro Carro { get; set; }
+        public int CarroID { get; set; }
+
+        public virtual Cliente Cliente { get; set; }
+        public int ClienteID { get; set; }
+
         public string Codigo { get; set; }
         public string DataAluguel { get; set; }
         public string DataDevolucao { get; set; }
         //public string Km_inicial { get; set; }
         //public string Km_final { get; set; }
 
-        public virtual Carro CarroReferencia { get; set; }
-        public virtual Cliente ClienteReferencia { get; set; }
+      
 
 
 

@@ -1,4 +1,5 @@
-﻿using LocadoraCarros.Negocio;
+﻿using LocadoraCarros;
+using LocadoraCarros.Negocio;
 using LocadoraCarros.Repositorios;
 using System;
 using System.Collections.Generic;
@@ -23,6 +24,9 @@ namespace LocadoraCarros {
     public partial class MainWindow : Window {
         public MainWindow() {
             InitializeComponent();
+
+            
+
         }
 
         ArquivoXMLCliente arquivoCliente = ArquivoXMLCliente.GetInstancia();

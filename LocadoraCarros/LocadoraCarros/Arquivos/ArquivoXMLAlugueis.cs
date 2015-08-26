@@ -27,7 +27,7 @@ namespace LocadoraCarros {
 
         public void Gravar(Aluguel aluguel) {
             XmlTextWriter arquivo;
-            arquivo = new XmlTextWriter(@"C:\Users\Lucas\Desktop\Aluguel.txt", Encoding.UTF8);
+            arquivo = new XmlTextWriter(@"C:\Users\Administrator\Desktop\Aluguel.txt", Encoding.UTF8);
 
 
             var carros = singleton.BuscarTodosCarros();

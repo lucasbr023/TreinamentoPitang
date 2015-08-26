@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LocadoraCarros"
         mc:Ignorable="d"
-        Title="CadastroCarro" Height="351.828" Width="522.258">
+        Title="CadastroCarro" Height="351.828" Width="522.258" Closed="Window_Closed_1">
     <Grid Margin="-16,-2,16,2">
         <Label x:Name="label" Content="Carro" HorizontalAlignment="Left" Margin="88,34,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
         <Label x:Name="label_Copy" Content="Modelo" HorizontalAlignment="Left" Margin="78,60,0,0" VerticalAlignment="Top"/>

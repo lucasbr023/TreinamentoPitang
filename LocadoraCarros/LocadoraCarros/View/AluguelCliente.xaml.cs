@@ -18,8 +18,15 @@ namespace LocadoraCarros {
     /// Interaction logic for AluguelCliente.xaml
     /// </summary>
     public partial class AluguelCliente : Window {
+
+        private static readonly LocadoraContext context = new LocadoraContext();
+
         public AluguelCliente() {
             InitializeComponent();
+            using (var context = new LocadoraContext()) {
+
+
+            }
         }
 
         Singleton singleton = Singleton.GetInstancia();
@@ -153,6 +160,10 @@ namespace LocadoraCarros {
 
         private void textBox4_TextChanged(object sender, TextChangedEventArgs e) {
 
+        }
+
+        private void Window_Closed_1(object sender, EventArgs e) {
+            context.Dispose();
         }
     }
 }

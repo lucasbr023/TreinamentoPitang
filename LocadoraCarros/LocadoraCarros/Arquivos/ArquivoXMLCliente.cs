@@ -29,7 +29,7 @@ namespace LocadoraCarros {
 
         public void Gravar(string Nome, string Documento, string DataNascimento, string Telefone) {
             XmlTextWriter arquivo;
-            arquivo = new XmlTextWriter(@"C:\Users\Lucas\Desktop\cliente.txt", Encoding.UTF8);
+            arquivo = new XmlTextWriter(@"C:\Users\Administrator\Desktop\cliente.txt", Encoding.UTF8);
             var clientes = singleton.BuscarTodosClientes();
 
             foreach (Cliente item in clientes) {

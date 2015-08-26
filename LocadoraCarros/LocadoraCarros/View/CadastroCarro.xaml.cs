@@ -21,8 +21,17 @@ namespace LocadoraCarros {
     /// Interaction logic for CadastroCarro.xaml
     /// </summary>
     public partial class CadastroCarro : Window {
+
+
+        private static readonly LocadoraContext context = new LocadoraContext();
+
         public CadastroCarro() {
             InitializeComponent();
+
+            using (var context = new LocadoraContext()) {
+                context.Carros.Add(new Carro("Ford KA", "PEN4655", false));
+
+            }
         }
 
 
@@ -91,6 +100,10 @@ namespace LocadoraCarros {
         private void comboBox_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
         {
 
+        }
+
+        private void Window_Closed_1(object sender, EventArgs e) {
+            context.Dispose();
         }
 
        

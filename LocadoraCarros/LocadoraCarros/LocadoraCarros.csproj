@@ -62,7 +62,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Context\LocadoraContex.cs" />
+    <Compile Include="Context\LocadoraContext.cs" />
+    <Compile Include="Migrations\201508261747487_InitialCreate.cs" />
+    <Compile Include="Migrations\201508261747487_InitialCreate.Designer.cs">
+      <DependentUpon>201508261747487_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201508261754318_Carro.cs" />
+    <Compile Include="Migrations\201508261754318_Carro.Designer.cs">
+      <DependentUpon>201508261754318_Carro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="View\AluguelCliente.xaml.cs">
       <DependentUpon>AluguelCliente.xaml</DependentUpon>
     </Compile>
@@ -128,6 +137,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="Migrations\201508261747487_InitialCreate.resx">
+      <DependentUpon>201508261747487_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201508261754318_Carro.resx">
+      <DependentUpon>201508261754318_Carro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
