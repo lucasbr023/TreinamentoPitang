@@ -39,6 +39,11 @@ namespace LocadoraCarros {
             string documentoCliente = textBox.Text;
             string placaCarro = textBox1.Text;
             string codigo = textBox2.Text;
+            string dataAluguel = textBox3.Text;
+            string dataEntrega = textBox4.Text;
+
+
+
 
             var clientes = singleton.BuscarTodosClientes();
             var carros = singleton.BuscarTodosCarros();
@@ -47,37 +52,35 @@ namespace LocadoraCarros {
                                   select c;
 
             var pesquisaCarro = from c in carros
-                                where c.Placa == placaCarro
+                                where c.Placa == placaCarro && c.Status == false
                                 select c;
 
+
+            var clienteComCarro = from c in clientes
+                                  where c.CodigoAluguel != null
+                                  select c;
+
+         
+            foreach (Cliente c in clienteComCarro) {
+                MessageBox.Show("Cliente já apresenta um carro alugado!");
+            }
+            
             foreach (Carro carro in pesquisaCarro) {
-                if (carro.Status == false) {
-                    carro.CodigoAluguel = codigo;
-                }
-                else {
-                    MessageBox.Show("Carro Indisponivel!");
-                    this.Close();
-                }
+
+                carro.CodigoAluguel = codigo;
             }
 
 
             foreach (Cliente item in clientes) {
-
-                if (item.CodigoAluguel == null) {
-                    item.CodigoAluguel = codigo;
-                }
-                else {
-                    MessageBox.Show("Cliente já apresenta um aluguel");
-                    this.Close();
-                }
-
+                item.CodigoAluguel = codigo;
+                
             }
 
             var query = from carro in pesquisaCarro
                         join cliente in pesquisaCliente
                         on carro.CodigoAluguel equals cliente.CodigoAluguel
                         where carro.Status == false
-                        select new Aluguel(cliente, carro, codigo);
+                        select new Aluguel(cliente, carro, codigo, dataAluguel, dataEntrega);
 
 
 
@@ -101,6 +104,8 @@ namespace LocadoraCarros {
             string documentoCliente = textBox.Text;
             string placaCarro = textBox1.Text;
             string codigo = textBox2.Text;
+            string dataAluguel = textBox3.Text;
+            string dataEntrega = textBox4.Text;
 
             var clientes = singleton.BuscarTodosClientes();
             var carros = singleton.BuscarTodosCarros();
@@ -130,7 +135,7 @@ namespace LocadoraCarros {
             var query = from carro in pesquisaCarro
                         join cliente in pesquisaCliente
                         on carro.CodigoAluguel equals cliente.CodigoAluguel
-                        select new Aluguel(cliente, carro, codigo);
+                        select new Aluguel(cliente, carro, codigo, dataAluguel, dataEntrega);
 
             foreach (Aluguel item in query) {
                 singleton.RemoverAluguel(item);
@@ -139,6 +144,14 @@ namespace LocadoraCarros {
 
             this.Close();
 
+
+        }
+
+        private void textBox3_TextChanged(object sender, TextChangedEventArgs e) {
+
+        }
+
+        private void textBox4_TextChanged(object sender, TextChangedEventArgs e) {
 
         }
     }

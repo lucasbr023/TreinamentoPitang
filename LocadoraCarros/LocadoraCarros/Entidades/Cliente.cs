@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 namespace LocadoraCarros {
     public class Cliente : Pessoa{
-      
+
+        public int ClienteID { get; set; }
         public Endereco Endereco { get; set; }
         public string DadosCartao { get; set; }
         public string CodigoAluguel { get; set; }
+
+        public virtual Carro Carro { get; set; }
         
 
         public Cliente(string nome, string documento, string codigoAluguel = null) {

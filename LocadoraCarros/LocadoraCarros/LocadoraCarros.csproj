@@ -37,8 +37,14 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -56,6 +62,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Context\LocadoraContex.cs" />
     <Compile Include="View\AluguelCliente.xaml.cs">
       <DependentUpon>AluguelCliente.xaml</DependentUpon>
     </Compile>
@@ -69,8 +76,6 @@
       <DependentUpon>CadastroCliente.xaml</DependentUpon>
     </Compile>
     <Compile Include="Entidades\Endereco.cs" />
-    <Compile Include="Entidades\Status.cs" />
-    <Compile Include="Entidades\Usuarios.cs" />
     <Compile Include="Negocio\Singleton.cs" />
     <Compile Include="Repositorios\RepositorioAluguel.cs" />
     <Compile Include="Repositorios\RepositorioCarro.cs" />
@@ -92,7 +97,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="Entidades\Administrador.cs" />
     <Compile Include="Entidades\Aluguel.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
@@ -128,6 +132,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

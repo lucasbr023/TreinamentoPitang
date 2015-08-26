@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 namespace LocadoraCarros {
     public class Carro {
 
+        public int CarroID { get; set; }
         public string Modelo { get; private set; }
         public string Ano { get; private set; }
         public string Placa { get; private set; }
@@ -18,6 +19,7 @@ namespace LocadoraCarros {
         public bool Status { get; set; }
         public string CodigoAluguel { get; set; }
 
+        public virtual Cliente Cliente { get; set; }
 
 
 

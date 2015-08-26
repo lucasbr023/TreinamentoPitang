@@ -175,4 +175,5 @@ C:\Users\Lucas\Desktop\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug
 C:\Users\Lucas\Desktop\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\View\CadastroCliente.baml
 C:\Users\Lucas\Desktop\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\View\MainWindow.baml
 C:\Users\Lucas\Desktop\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\LocadoraCarros.csprojResolveAssemblyReference.cache
-C:\Users\Lucas\Desktop\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Lucas\Desktop\TreinamentoPitang\LocadoraCarros\LocadoraCarros\bin\Debug\EntityFramework.dll
+C:\Users\Lucas\Desktop\TreinamentoPitang\LocadoraCarros\LocadoraCarros\bin\Debug\EntityFramework.xml
