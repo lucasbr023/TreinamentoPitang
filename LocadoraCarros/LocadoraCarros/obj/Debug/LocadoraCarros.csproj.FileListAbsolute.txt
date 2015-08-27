@@ -187,7 +187,6 @@ C:\Users\Lucas\Desktop\Nova pasta (2)\TreinamentoPitang\LocadoraCarros\LocadoraC
 C:\Users\Lucas\Desktop\Nova pasta (2)\TreinamentoPitang\LocadoraCarros\LocadoraCarros\bin\Debug\LocadoraCarros.pdb
 C:\Users\Lucas\Desktop\Nova pasta (2)\TreinamentoPitang\LocadoraCarros\LocadoraCarros\bin\Debug\EntityFramework.dll
 C:\Users\Lucas\Desktop\Nova pasta (2)\TreinamentoPitang\LocadoraCarros\LocadoraCarros\bin\Debug\EntityFramework.xml
-C:\Users\Lucas\Desktop\Nova pasta (2)\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\LocadoraCarros.csprojResolveAssemblyReference.cache
 C:\Users\Lucas\Desktop\Nova pasta (2)\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\View\AluguelCliente.g.cs
 C:\Users\Lucas\Desktop\Nova pasta (2)\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\View\CadastroCarro.g.cs
 C:\Users\Lucas\Desktop\Nova pasta (2)\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\View\CadastroCliente.g.cs

@@ -10,6 +10,7 @@ namespace LocadoraCarros {
         public string Nome { get; set; }
         public string Documento { get; set; }
         public string DataNascimento { get; set; }
+        public string teste { get; set; }
 
     }
 }

@@ -63,6 +63,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Context\LocadoraContext.cs" />
+    <Compile Include="Entidades\Administrador.cs" />
     <Compile Include="Migrations\201508261747487_InitialCreate.cs" />
     <Compile Include="Migrations\201508261747487_InitialCreate.Designer.cs">
       <DependentUpon>201508261747487_InitialCreate.cs</DependentUpon>
