@@ -29,9 +29,7 @@ namespace LocadoraCarros
         {
             InitializeComponent();
 
-            using (var context = new LocadoraContext()) {
-                context.Clientes.Add(new Cliente("Lucas", "123"));
-            }
+            
 
 
         } 
@@ -58,7 +56,7 @@ namespace LocadoraCarros
             string cep = textBox_cep.Text;
             string cidade = textBox_cidade.Text;
             string complemento = textBox_complemento.Text;
-            
+
 
 
 
@@ -84,8 +82,10 @@ namespace LocadoraCarros
             //    MessageBox.Show("Data invalida!");
             //}
 
-
-            Cliente cliente = new Cliente(nome, documento);
+            Endereco endereco = new Endereco() { Bairro = bairro, Cep = cep, Cidade = cidade, Complemento = complemento, Estado = estado, Logradouro = logradouro, Numero = numero };
+            Cliente cliente = new Cliente() { Nome = nome, DataNascimento = dataNascimento, Endereco = endereco, Documento = documento};
+            context.Clientes.Add(cliente);
+            context.SaveChanges();
             singleton.InserirCliente(cliente);
             arquivo.Gravar(nome, documento, dataNascimento, telefone);
            

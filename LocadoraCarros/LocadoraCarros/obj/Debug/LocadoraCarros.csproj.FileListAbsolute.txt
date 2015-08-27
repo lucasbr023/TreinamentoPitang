@@ -180,3 +180,27 @@ C:\Users\Administrator\Desktop\TreinamentoPitang\LocadoraCarros\LocadoraCarros\o
 C:\Users\Administrator\Desktop\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\View\MainWindow.baml
 C:\Users\Administrator\Desktop\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\LocadoraCarros.Migrations.InitialCreate.resources
 C:\Users\Administrator\Desktop\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\LocadoraCarros.Migrations.Carro.resources
+C:\Users\Lucas\Desktop\Nova pasta (2)\TreinamentoPitang\LocadoraCarros\LocadoraCarros\bin\Debug\LocadoraCarros.exe.config
+C:\Users\Lucas\Desktop\Nova pasta (2)\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\LocadoraCarros.exe
+C:\Users\Lucas\Desktop\Nova pasta (2)\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\LocadoraCarros.pdb
+C:\Users\Lucas\Desktop\Nova pasta (2)\TreinamentoPitang\LocadoraCarros\LocadoraCarros\bin\Debug\LocadoraCarros.exe
+C:\Users\Lucas\Desktop\Nova pasta (2)\TreinamentoPitang\LocadoraCarros\LocadoraCarros\bin\Debug\LocadoraCarros.pdb
+C:\Users\Lucas\Desktop\Nova pasta (2)\TreinamentoPitang\LocadoraCarros\LocadoraCarros\bin\Debug\EntityFramework.dll
+C:\Users\Lucas\Desktop\Nova pasta (2)\TreinamentoPitang\LocadoraCarros\LocadoraCarros\bin\Debug\EntityFramework.xml
+C:\Users\Lucas\Desktop\Nova pasta (2)\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\LocadoraCarros.csprojResolveAssemblyReference.cache
+C:\Users\Lucas\Desktop\Nova pasta (2)\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\View\AluguelCliente.g.cs
+C:\Users\Lucas\Desktop\Nova pasta (2)\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\View\CadastroCarro.g.cs
+C:\Users\Lucas\Desktop\Nova pasta (2)\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\View\CadastroCliente.g.cs
+C:\Users\Lucas\Desktop\Nova pasta (2)\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\View\MainWindow.g.cs
+C:\Users\Lucas\Desktop\Nova pasta (2)\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\App.g.cs
+C:\Users\Lucas\Desktop\Nova pasta (2)\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\LocadoraCarros_MarkupCompile.cache
+C:\Users\Lucas\Desktop\Nova pasta (2)\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\LocadoraCarros_MarkupCompile.lref
+C:\Users\Lucas\Desktop\Nova pasta (2)\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\View\AluguelCliente.baml
+C:\Users\Lucas\Desktop\Nova pasta (2)\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\View\CadastroCarro.baml
+C:\Users\Lucas\Desktop\Nova pasta (2)\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\View\CadastroCliente.baml
+C:\Users\Lucas\Desktop\Nova pasta (2)\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\View\MainWindow.baml
+C:\Users\Lucas\Desktop\Nova pasta (2)\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\LocadoraCarros.g.resources
+C:\Users\Lucas\Desktop\Nova pasta (2)\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\LocadoraCarros.Migrations.InitialCreate.resources
+C:\Users\Lucas\Desktop\Nova pasta (2)\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\LocadoraCarros.Migrations.Carro.resources
+C:\Users\Lucas\Desktop\Nova pasta (2)\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\LocadoraCarros.Properties.Resources.resources
+C:\Users\Lucas\Desktop\Nova pasta (2)\TreinamentoPitang\LocadoraCarros\LocadoraCarros\obj\Debug\LocadoraCarros.csproj.GenerateResource.Cache

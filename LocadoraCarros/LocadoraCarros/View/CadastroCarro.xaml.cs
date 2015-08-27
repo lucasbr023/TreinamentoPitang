@@ -28,10 +28,7 @@ namespace LocadoraCarros {
         public CadastroCarro() {
             InitializeComponent();
 
-            using (var context = new LocadoraContext()) {
-                context.Carros.Add(new Carro("Ford KA", "PEN4655", false));
-
-            }
+         
         }
 
 
@@ -45,14 +42,16 @@ namespace LocadoraCarros {
             string placa = textBox_Placa.Text;
             string cor = textBox_Cor.Text;
             int quilometragem = int.Parse(textBox_Quilometragem.Text);
-            string chaci = textBox_Chaci.Text;
+            string chassi = textBox_Chaci.Text;
             int qtdPortas = int.Parse(textBox_qtdPortas.Text);
             string modelo = textBox_Modelo.Text;
 
 
-            Carro carro = new Carro(modelo, placa, false);
+            Carro carro = new Carro(modelo, ano, chassi, placa) { Cor = cor, QtdPortas = qtdPortas};
             singleton.InserirCarro(carro);
-            arquivo.Gravar(modelo,ano,placa,quilometragem.ToString(),cor,chaci,qtdPortas.ToString(),false.ToString());
+            context.Carros.Add(carro);
+            context.SaveChanges();
+            arquivo.Gravar(modelo,ano,placa,quilometragem.ToString(),cor,chassi,qtdPortas.ToString(),false.ToString());
             this.Close();
         }
 

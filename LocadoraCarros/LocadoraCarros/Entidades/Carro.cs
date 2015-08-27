@@ -24,10 +24,11 @@ namespace LocadoraCarros {
 
 
 
-        public Carro(string modelo, string placa, bool status,string codigoAluguel = null) {
+        public Carro(string modelo, string ano, string chassi, string placa,string codigoAluguel = null) {
+            Ano = ano;
+            Chassi = chassi;
             Modelo = modelo;
             Placa = placa;
-            Status = status;
             CodigoAluguel = codigoAluguel;
         }
 

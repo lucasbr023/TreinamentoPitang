@@ -12,16 +12,13 @@ namespace LocadoraCarros {
 
         public int ClienteID { get; set; }
         public Endereco Endereco { get; set; }
-        public string DadosCartao { get; set; }
         public string CodigoAluguel { get; set; }
 
         public virtual ICollection<Aluguel> Alugueis { get; set; }
         
 
-        public Cliente(string nome, string documento, string codigoAluguel = null) {
-            Nome = nome;
-            Documento = documento;
-            CodigoAluguel = codigoAluguel;
+        public Cliente(string codigoAluguel = null) {
+         
 
         }
 

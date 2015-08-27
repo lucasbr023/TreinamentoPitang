@@ -23,10 +23,7 @@ namespace LocadoraCarros {
 
         public AluguelCliente() {
             InitializeComponent();
-            using (var context = new LocadoraContext()) {
-
-
-            }
+            
         }
 
         Singleton singleton = Singleton.GetInstancia();
@@ -94,6 +91,8 @@ namespace LocadoraCarros {
             foreach (Aluguel item in query) {
                 item.Carro.Status = true;
                 singleton.InserirAluguel(item);
+                context.Alugueis.Add(item);
+                context.SaveChanges();
                 arquivo.Gravar(item);
 
             }
